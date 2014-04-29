@@ -4,9 +4,11 @@
 
 ### Arquitectura CSS
 
-#### BEM
+#### BEM (bloque, elemento, modificador)
 
-Utiliza la nomenclatura BEM (bloque, elemento, modificador)
+BEM es una metodología para nombrar y clasificar selectores CSS de manera estricta, transparente e informativa.
+
+                    _My_ Framework utiliza la nomenclatura BEM 
 
 Bloque: es una entidad independiente. Puede ser simple o compuesto por otros bloques. Ej.: buscador (simple) o header (compuesto).
 
@@ -15,6 +17,9 @@ Bloque: es una entidad independiente. Puede ser simple o compuesto por otros blo
     .menu {}
     .search {}
 ```
+
+(`)test(`)
+(`test)
 
 Elemento: parte de un bloque que cumple una función. Ej.: input y button.
 
