@@ -184,7 +184,7 @@ SMACSS es una arquitectura y filosofía, tambien llamadada guia de estilos, para
 
 SMACSS define cinco categorías o archivos: 
 
-Base
+**Base**
 En esta categoría se incluyen los estilos base de nuestro proyecto, incluyendo reset o el Normalize.css, tipografías y márgenes básicos de todo el sitio.
 
 __Ejemplo__
@@ -192,6 +192,9 @@ __Ejemplo__
 __Stylus__
 
 ```css
+color1 = #01DFFD
+color2 = color1 * 2
+
 body
 form 
  margin 0
@@ -204,12 +207,8 @@ a
 ```
 
 __Css__
-
-
-color1 = #01DFFD
-color2 = color1 * 2
-
 ```css
+
  body, form {
     margin: 0;
     padding: 0;
@@ -222,19 +221,44 @@ a {
 a:hover {
     color: #03F;    
 }
-
 ```
-Module
+**Module**
 Los módulos son todos aquellos componentes reutilizables e independientes, lo que en BEM serian los bloques o los componentes en OOCSS.
 
-State
+__Ejemplo__
+
+__Stylus__
+
+```css
+.module
+ h2 
+  padding 5px
+ span 
+  padding 15px
+```
+
+__Css__
+```css
+
+.module > h2 {
+    padding: 5px;
+}
+
+.module span {
+    padding: 5px;
+}
+```
+
+**State**
 Son los modificadores de los elementos, las reglas de estado son todas aquellas que determinan como se verá un módulo, cuando se encuentra en un estado en específico.
 
-Layout 
+**Layout**
 Hoja de estilos con las reglas que definen la web semantica.
 
-Theme
+**Theme**
 Es lo que en OOCSS seria el _Skin_, en esta hoja se almacenan los colores, formas y tamaños.
+
+__Documentación:__  [Sitio oficial SMACSS](http://smacss.com/)
 
 ## Estructura My
 
