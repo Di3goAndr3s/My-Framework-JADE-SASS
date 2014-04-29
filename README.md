@@ -35,9 +35,9 @@ __Modificador:__  con un modificador se crea un bloque similar a otro existente.
 Los bloques y elementos buscan tener selectores únicos. Si el bloque es `.menu`, un elemento se llamaria `.menu__item` y un modificador sería `.menu__item–-activo`.
 
 ```css
-    .bloque {}
-    .bloque__elemento {}
-    .bloque--modificador {}
+.bloque {}
+.bloque__elemento {}
+.bloque--modificador {}
 ```
 
 __Documentación:__  [Sitio oficial BEM](http://bem.info/)
