@@ -54,7 +54,7 @@ __Documentación:__  [Sitio oficial BEM](http://bem.info/)
 
 OOCSS es una metodología basada en dos principios:
 
-1. División de los componentes en estructura(layout) y skin(theme). Esta separación de estructura y estilos nos permite trabajar de manera modular con los “skins” que se pueden aplicar a   los diversos módulos u objetos.
++ División de los componentes en estructura(layout) y skin(theme). Esta separación de estructura y estilos nos permite trabajar de manera modular con los “skins” que se pueden aplicar a   los diversos módulos u objetos.
 
 __Ejemplo__ 
 
@@ -99,7 +99,7 @@ __Css__
 .menu .menu--blue {color: #1e6ce2;}
 ```
 
-2. Separacion del contenedor y el contenido: Se evita el uso de selectores dependientes, por ejemplo Aside h2 {}, pues h2 ya deberia estar definido con sus modificadores.
++ Separacion del contenedor y el contenido: Se evita el uso de selectores dependientes, por ejemplo `Aside h2 {}`, pues `h2` ya deberia estar definido con sus modificadores.
 
 __Ejemplo__
 
