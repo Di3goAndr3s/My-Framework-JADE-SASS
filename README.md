@@ -2,6 +2,12 @@
 
 ### Modern front-end framework JADE/STYLUS
 
+## ¿Qué es My?
+
+## ¿Por que My y que busca?
+
+## ¿Por que Jade y Stylus?
+
 ## Arquitectura CSS
 
 #### BEM (bloque, elemento, modificador)
