@@ -10,12 +10,13 @@ Es un framework Html y Css compilado en Jade y Stylus
 
 **My** nace de la necesidad de documentar y estandarizar el marco de trabajo que uso para marcar y estilizar en mi oficio como front-end.
 
-+ Busca tener un sistema de grilla con display flex.
-+ Busca generar patrones(mixins)que permitan hacer una arquitectura modular y escalable.
++ Busca tener un sistema de grilla flexible basado en modelo de caja flexible `display flex`.
++ Busca generar patrones(mixins) html y csss que permitan hacer una arquitectura modular y escalable.
 + Busca generar patrones Easing(cubic-bezier) que permitan usar transiciones CSS3 avanzadas.
-+ Busca generar patrones de elementos que se repiten en una web: botones, enlaces, imagenes, titulos, elementos de formularios, paneles, columnas, etc.
++ Busca generar bloques, bloques de elementos y modificadores de elementos de manera eficiente tanto en html como en css.
 + Busca agilizar el proceso de marcado mediante Jade y el proceso de estilizado mediante Styles.
 + Busca tener un codigo limpio e identado.
++ Incluye elementos de bloques como botones, enlaces, imagenes, titulos, elementos de formularios, paneles, columnas con sus respectivos modificadores.
 
 ## ¿Por que Jade y Stylus?
 
