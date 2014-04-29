@@ -4,18 +4,19 @@
 
 ## ¿Qué es My?
 
-Es un framework Html y Css compilado en Jade y Stylus
+Es un framework Html y Css compilado en Jade y Stylus. Utilizar `My` implica trabajar con una metodología agil y moderna que trae beneficios para el mantenimiento, escalabilidad y desarrollo de los proyectos.
 
-## ¿Por que My y que busca?
+## ¿Por que My y que tiene de diferente vs otros frameworks?
 
-**My** nace de la necesidad de documentar y estandarizar el marco de trabajo que uso para marcar y estilizar en mi oficio como front-end.
+**My** nace de la necesidad de documentar y estandarizar el marco de trabajo que uso para marcar y estilizar en mi oficio como front-end. Busca marcar la diferencia en los siguientes puntos:
 
-+ Busca tener un sistema de grilla flexible basado en modelo de caja flexible `display flex`.
-+ Busca generar patrones(mixins) html y csss que permitan hacer una arquitectura modular y escalable.
-+ Busca generar patrones Easing(cubic-bezier) que permitan usar transiciones CSS3 avanzadas.
++ Posee un sistema de grilla flexible basado en modelo de caja flexible `display flex`.
++ Tiene patrones(mixins) Html y Css que permiten hacer una arquitectura modular y escalable.
++ Posee patrones Easing(cubic-bezier) que permitan usar transiciones CSS3 avanzadas.
++ Mixins integrados con Font-awesome para crear iconos de manera rapida desde el html o desde el Css con las pseudoclases `::after` y `::before`.
 + Busca generar bloques, bloques de elementos y modificadores de elementos de manera eficiente tanto en html como en css.
-+ Busca agilizar el proceso de marcado mediante Jade y el proceso de estilizado mediante Styles.
-+ Busca tener un codigo limpio e identado.
++ Html compilado en Jade y CSS compilado en Stylus.
++ Busca generar buenas practicas al obligar al desarrollador a escribir un codigo limpio e identado.
 + Incluye elementos de bloques como botones, enlaces, imagenes, titulos, elementos de formularios, paneles, columnas con sus respectivos modificadores.
 
 ## ¿Por que Jade y Stylus?
