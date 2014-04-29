@@ -186,7 +186,7 @@ aside {}
 
 SMACSS es una arquitectura y filosofía, tambien llamadada guia de estilos, para la estructuración de las hojas de estilos de un proyecto, buscando facilitar la mantenibilidad y flexibilidad, mediante la categorización de los estilos en diferentes archivos.
 
-SMACSS define cinco categorías o archivos: 
+SMACSS define cinco categorías o archivos que apropia __My__: 
 
 **Base:**
 En esta categoría se incluyen los estilos base de nuestro proyecto, incluyendo reset o el Normalize.css, tipografías y márgenes básicos de todo el sitio.
