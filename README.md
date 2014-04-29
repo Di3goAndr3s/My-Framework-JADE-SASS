@@ -1,10 +1,10 @@
 # My framework
 
-## Modern front-end framework JADE/STYLUS
+-> Modern front-end framework JADE/STYLUS <--
 
-### Arquitectura CSS
+## Arquitectura CSS
 
-#### BEM (bloque, elemento, modificador)
+### BEM (bloque, elemento, modificador)
 
 BEM es una metodología para nombrar y clasificar selectores CSS de manera estricta, transparente e informativa.
 
