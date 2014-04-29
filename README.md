@@ -287,30 +287,59 @@ __Ejemplo__
 __Stylus__
 
 ```css
-.error 
-  background-color red
-  color white
-    
-.is-tab-active 
-  background-color white
-  color black
+
+anchoBox = 960px
+
+header
+article
+footer 
+  width anchoBox
+  margin auto
+
+.article-left
+    @import article
+    border solid color2
+    border-width 1px 0 0
 ```
 
 __Css__
 ```css
-.error {
-    background-color: red;
-    color: white;
+header, article, footer {
+    width: 960px;
+    margin: auto;
 }
 
-.is-tab-active {
-    background-color: white;
-    color: black;
+.side-left {
+    border: solid #CCC;
+    border-width: 1px 0 0;
 }
 ```
 
 **Theme:**
 Es lo que en OOCSS seria el _Skin_, en esta hoja se almacenan los colores, formas y tamaños.
+
+__Ejemplo__
+
+__Stylus__
+
+```css
+.borderSlider
+  border 1px solid
+  
+.borderSliderblue 
+    border-color color1
+```
+
+__Css__
+```css
+.borderSlider {
+    border: 1px solid;
+}
+
+.borderSliderblue {
+    border-color: blue;
+}
+```
 
 __Documentación:__  [Sitio oficial SMACSS](http://smacss.com/)
 
