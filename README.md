@@ -27,54 +27,87 @@ Elemento: parte de un bloque que cumple una función. Ej.: input y button.
 Modificador: con un modificador se crea un bloque similar a otro existente. Por ej. el activo de un menú.
 
 ```css
-    .bloque--modificador{}
-    .menu–-activo.
+    .bloque--modificador {}
+    .menu–-activo {}
     .search--error {}
 ```
 
 Los bloques y elementos tienen nombres únicos (selectores de clase CSS). Si el bloque es .nav, un elemento se llamaría .nav__item y un modificador sería .nav__item–activo.
 
 ```css
-    .bloque{}
-    .bloque__elemento{}
-    .bloque--modificador{}
+    .bloque {}
+    .bloque__elemento {}
+    .bloque--modificador {}
 ```
 
 *Documentación:* [Sitio oficial BEM](http://bem.info/)
 
 #### OOCSS
 
-My framework utiliza el principio OOCSS (CSS orientado a objetos)
+My framework utiliza los principios OOCSS (CSS orientado a objetos)
 
 
-   1.  División de los componentes en estructura(layout) y skin(theme). Esta separación de estructura y estilos nos permite trabajar de manera modular con los “skins” que se pueden aplicar a   los diversos módulos u objetos.
+   1. División de los componentes en estructura(layout) y skin(theme). Esta separación de estructura y estilos nos permite trabajar de manera modular con los “skins” que se pueden aplicar a   los diversos módulos u objetos.
 
   *Ejemplo*
 
   *Jade*
 
 ```html
-    .foo(class="menu menu--left menu--blue")
+    ul.menu.menu--left.menu--blue
+     li:a(href="#") Inicio
+     li:a(href="#") Quíenes somos
+     ...
 ```
+
+  *Html*
+
+```html
+    <ul class="menu menu--left menu--blue"
+     <li><a href="#">Inicio</a>
+     <li><a href="#">Quíenes somos</a>
+     ...
+``` </ul>
 
   *Stylus*
 
 ```css
-    .menu {}
-    .menu--left {float: left;}
-    .menu--blue {}
-  ```
 
-   2. Separacion del contenedor y el contenido:
-   Se evita el uso de selectores dependientes, por ejemplo Aside h2 {}, pues h2 ya deberia estar definido con sus modificadores
+    MyBlue = #1e6ce2
+
+    .menu
+     .menu--left
+       float left
+     .menu--blue
+       color MyBlue
+    ...
+```
+
+  *Css*
+
+```css
+    .menu {}
+    .menu .menu--left {float: left;}
+    .menu .menu--blue {color: #1e6ce2;}
+    ...
+```
+
+   2. Separacion del contenedor y el contenido: Se evita el uso de selectores dependientes, por ejemplo Aside h2 {}, pues h2 ya deberia estar definido con sus modificadores.
 
     *Ejemplo*
+
+      *Jade*
+
+```html
+    aside
+     h2.modificador
+```
+  *Stylus*
 
 ```css
      h2 {}
      h2.modificador {}
      aside {}
-     aside
 ```
 
 
