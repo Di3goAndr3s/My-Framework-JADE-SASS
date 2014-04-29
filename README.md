@@ -14,7 +14,9 @@
 
 ### CSS Guidelines
 
-__**My** Framework__ esta influenciado por [CSS Guidelines](https://github.com/csswizardry/CSS-Guidelines/) de Harry Roberts de [CSS wizardry](http://csswizardry.com/).
+__**My** Framework__ esta influenciado por las [CSS Guidelines](https://github.com/csswizardry/CSS-Guidelines/) de Harry Roberts de [CSS wizardry](http://csswizardry.com/).
+
+Harry Roberts dice:
 
 > Yo trabajo bajo OOCSS; Divido los componentes en estructura (objetos) y skin (extension). Como analogía (No ejemplo) observad lo siguiente:
 
@@ -139,8 +141,8 @@ aside {}
 ```
 **Documentación:**
 
- |[Wiki OOCSS](https://github.com/stubbornella/oocss/wiki/)
- |[Blog del Autor](http://www.stubbornella.org/)
+ [Wiki OOCSS](https://github.com/stubbornella/oocss/wiki/)
+ | [Blog del Autor](http://www.stubbornella.org/)
 
 
 #### SMACSS (Arquitectura escalable y modular para CSS)
