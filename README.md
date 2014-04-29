@@ -4,9 +4,26 @@
 
 ## ¿Qué es My?
 
+Es un framework Html y Css compilado en Jade y Stylus
+
 ## ¿Por que My y que busca?
 
+**My** nace de la necesidad de documentar y estandarizar el marco de trabajo que uso para marcar y estilizar en mi oficio como front-end.
+
++ Busca tener un sistema de grilla con display flex.
++ Busca generar patrones(mixins)que permitan hacer una arquitectura modular y escalable.
++ Busca generar patrones Easing(cubic-bezier) que permitan usar transiciones CSS3 avanzadas.
++ Busca generar patrones de elementos que se repiten en una web: botones, enlaces, imagenes, titulos, elementos de formularios, paneles, columnas, etc.
++ Busca agilizar el proceso de marcado mediante Jade y el proceso de estilizado mediante Styles.
++ Busca tener un codigo limpio e identado.
+
 ## ¿Por que Jade y Stylus?
+
+La respuesta es sencilla. Un código Stylus es muchísimo más sencillo de mantener, menos horas de trabajo que significa menos costes que un CSS en bruto. Asi mismo un codigo Jade es mas rapido, limpio y eficiente que un Html neto.
+
+Aunque tienen una curva de aprendizaje moderada, se van a encontrar con dos lenguajes de alto nivel, completos y documentados. Es cuestion de acostumbrarse a la identación y a la sintaxis. 
+
+Por otro lado, __My__ busca ser, en un futuro, un framework funcional en frameworks como express.js para node.js.
 
 ## Influencias My
 
