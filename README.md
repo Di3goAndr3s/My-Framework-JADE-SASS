@@ -184,7 +184,7 @@ SMACSS es una arquitectura y filosofía, tambien llamadada guia de estilos, para
 
 SMACSS define cinco categorías o archivos: 
 
-**Base**
+**Base:**
 En esta categoría se incluyen los estilos base de nuestro proyecto, incluyendo reset o el Normalize.css, tipografías y márgenes básicos de todo el sitio.
 
 __Ejemplo__
@@ -222,7 +222,7 @@ a:hover {
     color: #03F;    
 }
 ```
-**Module**
+**Module:**
 Los módulos son todos aquellos componentes reutilizables e independientes, lo que en BEM serian los bloques o los componentes en OOCSS.
 
 __Ejemplo__
@@ -249,13 +249,67 @@ __Css__
 }
 ```
 
-**State**
+**State:**
 Son los modificadores de los elementos, las reglas de estado son todas aquellas que determinan como se verá un módulo, cuando se encuentra en un estado en específico.
 
-**Layout**
-Hoja de estilos con las reglas que definen la web semantica.
+__Ejemplo__
 
-**Theme**
+__Stylus__
+
+```css
+.error 
+  background-color red
+  color white
+    
+.is-tab-active 
+  background-color white
+  color black
+```
+
+__Css__
+```css
+.error {
+    background-color: red;
+    color: white;
+}
+
+.is-tab-active {
+    background-color: white;
+    color: black;
+}
+```
+
+**Layout:**
+Hoja de estilos con las reglas que definen los contenedores y la grilla.
+
+__Ejemplo__
+
+__Stylus__
+
+```css
+.error 
+  background-color red
+  color white
+    
+.is-tab-active 
+  background-color white
+  color black
+```
+
+__Css__
+```css
+.error {
+    background-color: red;
+    color: white;
+}
+
+.is-tab-active {
+    background-color: white;
+    color: black;
+}
+```
+
+**Theme:**
 Es lo que en OOCSS seria el _Skin_, en esta hoja se almacenan los colores, formas y tamaños.
 
 __Documentación:__  [Sitio oficial SMACSS](http://smacss.com/)
