@@ -180,7 +180,61 @@ aside {}
 
 #### SMACSS (Arquitectura escalable y modular para CSS)
 
-es una guía de estilo escrita por Jonathan Snook un diseñador, desarrollador web y autor de The Art and Science of CSS publicado por SitePoint. SMACSS abarca 12 capítulos que se pueden leerle gratuitamente online que explican cómo categorizar las reglas CSS. El acceso premium incluye 4 capítulos extras, sobre cómo aprovechar las características de los pre-procesadores de CSS para trabajar con SMACSS, cuándo definir estilos base y cuándo definir módulos, cómo trabajar con iconos, cómo lidiar con estados complejos y 2 videos.
+SMACSS es una arquitectura y filosofía, tambien llamadada guia de estilos, para la estructuración de las hojas de estilos de un proyecto, buscando facilitar la mantenibilidad y flexibilidad, mediante la categorización de los estilos en diferentes archivos.
+
+SMACSS define cinco categorías o archivos: 
+
+Base
+En esta categoría se incluyen los estilos base de nuestro proyecto, incluyendo reset o el Normalize.css, tipografías y márgenes básicos de todo el sitio.
+
+__Ejemplo__
+
+__Stylus__
+
+```css
+body
+form 
+ margin 0
+ padding 0
+
+a 
+ color color1
+ &:hover 
+  color color2   
+```
+
+__Css__
+
+
+color1 = #01DFFD
+color2 = color1 * 2
+
+```css
+ body, form {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #039;
+}
+
+a:hover {
+    color: #03F;    
+}
+
+```
+Module
+Los módulos son todos aquellos componentes reutilizables e independientes, lo que en BEM serian los bloques o los componentes en OOCSS.
+
+State
+Son los modificadores de los elementos, las reglas de estado son todas aquellas que determinan como se verá un módulo, cuando se encuentra en un estado en específico.
+
+Layout 
+Hoja de estilos con las reglas que definen la web semantica.
+
+Theme
+Es lo que en OOCSS seria el _Skin_, en esta hoja se almacenan los colores, formas y tamaños.
 
 ## Estructura My
 
