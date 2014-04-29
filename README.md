@@ -47,37 +47,35 @@ Los bloques y elementos tienen nombres únicos (selectores de clase CSS). Si el 
 My framework utiliza el principio OOCSS (CSS orientado a objetos)
 
 
-   1.  División de los componentes en estructura(layout) y skin(theme). Esta separación de estructura y estilos nos permite trabajar de manera modular con los “skins” que se pueden aplicar a los diversos módulos u objetos.
+   1.  División de los componentes en estructura(layout) y skin(theme). Esta separación de estructura y estilos nos permite trabajar de manera modular con los “skins” que se pueden aplicar a   los diversos módulos u objetos.
 
-  *Ejemplo
+  *Ejemplo*
 
-  *Jade
+  *Jade*
 
-```jade
-
+```html
     .foo(class="menu menu--left menu--blue")
-
 ```
 
-  *Stylus
+  *Stylus*
 
-```stylus
-
+```css
     .menu {}
     .menu--left {float: left;}
     .menu--blue {}
-
   ```
 
    2. Separacion del contenedor y el contenido:
    Se evita el uso de selectores dependientes, por ejemplo Aside h2 {}, pues h2 ya deberia estar definido con sus modificadores
 
-    *Ejemplo
+    *Ejemplo*
 
-   ```
-   Ej. aside
-        h2
-   ```
+```css
+     h2 {}
+     h2.modificador {}
+     aside {}
+     aside
+```
 
 
 Citando a Harry Roberts de [CSSwizardry](http://csswizardry.com/) en su CSS Guidelines [Guidelines](https://github.com/csswizardry/CSS-Guidelines)
