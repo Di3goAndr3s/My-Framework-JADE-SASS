@@ -1,8 +1,8 @@
 # *My* framework
 
-**Modern front-end framework JADE/STYLUS**
+### Modern front-end framework JADE/STYLUS
 
-### Arquitectura CSS
+## Arquitectura CSS
 
 #### BEM (bloque, elemento, modificador)
 
@@ -134,3 +134,7 @@ __My__ Framework esta influenciado por las [CSS Guidelines](https://github.com/c
  |[Wiki OOCSS](https://github.com/stubbornella/oocss/wiki/)
  |[Blog del Autor](http://www.stubbornella.org/)
 
+
+#### SMACSS (Arquitectura escalable y modular para CSS)
+
+es una guía de estilo escrita por Jonathan Snook un diseñador, desarrollador web y autor de The Art and Science of CSS publicado por SitePoint. SMACSS abarca 12 capítulos que se pueden leerle gratuitamente online que explican cómo categorizar las reglas CSS. El acceso premium incluye 4 capítulos extras, sobre cómo aprovechar las características de los pre-procesadores de CSS para trabajar con SMACSS, cuándo definir estilos base y cuándo definir módulos, cómo trabajar con iconos, cómo lidiar con estados complejos y 2 videos.
