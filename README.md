@@ -34,6 +34,15 @@ Por otro lado, __My__ busca integrarse, en un futuro, con frameworks de aplicaci
 
 ### Filosofía NRY
 
+### Flex Layout
+
+Todos los bloques construido con **My** no deberian tener anchos `width auto` ni altos fijos `height auto`. Buscan ser fluidos y su _Width_ es regido por su contenedor o por su grid.
+
+**Documentación:** 
+ [Chris Coyier](http://css-tricks.com/snippets/css/a-guide-to-flexbox/) 
+ | [David Walsh](http://davidwalsh.name/stylus-grid/)
+ | [Philip Walton](http://philipwalton.github.io/solved-by-flexbox/demos/grids/) 
+
 ### CSS Guidelines
 
 __**My** Framework__ esta influenciado por las [CSS Guidelines](https://github.com/csswizardry/CSS-Guidelines/) de Harry Roberts de [CSS wizardry](http://csswizardry.com/).
