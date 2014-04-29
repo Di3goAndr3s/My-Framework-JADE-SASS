@@ -1,6 +1,7 @@
 # My framework
 
--> Modern front-end framework JADE/STYLUS <--
+-> Modern front-end framework JADE/STYLUS <-
+-> This is center align <-
 
 ## Arquitectura CSS
 
