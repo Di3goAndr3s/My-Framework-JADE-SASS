@@ -8,7 +8,7 @@
 
 BEM es una metodología para nombrar y clasificar selectores CSS de manera estricta, transparente e informativa.
 
-*Bloque:* es una entidad independiente. Puede ser visto como un objeto o un modulo. Un ejemplo es el buscador o el header.
+_Bloque:_ es una entidad independiente. Puede ser visto como un objeto o un modulo. Un ejemplo es el buscador o el header.
 
 ```css
 .bloque {}
@@ -16,7 +16,7 @@ BEM es una metodología para nombrar y clasificar selectores CSS de manera estri
 .search {}
 ```
 
-*Elemento:* parte de un bloque que cumple una función. Un ejemplo es un input o un button, una imagen o un enlace.
+_Elemento:_ parte de un bloque que cumple una función. Un ejemplo es un input o un button, una imagen o un enlace.
 
 ```css
     .bloque__elemento {}
@@ -24,7 +24,7 @@ BEM es una metodología para nombrar y clasificar selectores CSS de manera estri
     .search__input {}
 ```
 
-*Modificador:* con un modificador se crea un bloque similar a otro existente. Por ej. el activo de un menú.
+_Modificador:_ con un modificador se crea un bloque similar a otro existente. Por ej. el activo de un menú.
 
 ```css
     .bloque--modificador {}
@@ -40,7 +40,7 @@ Los bloques y elementos buscan tener selectores únicos. Si el bloque es `.menu`
     .bloque--modificador {}
 ```
 
-*Documentación:* [Sitio oficial BEM](http://bem.info/)
+_Documentación:_ [Sitio oficial BEM](http://bem.info/)
 
 #### OOCSS (CSS orientado a objetos)
 
@@ -49,9 +49,9 @@ OOCSS es una metodología basada en dos principios:
 
 1. División de los componentes en estructura(layout) y skin(theme). Esta separación de estructura y estilos nos permite trabajar de manera modular con los “skins” que se pueden aplicar a   los diversos módulos u objetos.
 
-#####Ejemplo
+_Ejemplo_
 
-*Jade*
+_Jade_
 
 ```html
 ul.menu.menu--left.menu--blue
@@ -60,7 +60,7 @@ li:a(href="#") Quíenes somos
 ...
 ```
 
-*Html*
+_Html_
 
 ```html
 <ul class="menu menu--left menu--blue"
@@ -70,7 +70,7 @@ li:a(href="#") Quíenes somos
 </ul>
 ```
 
-*Stylus*
+_Stylus_
 
 ```css
 
@@ -84,7 +84,7 @@ MyBlue = #1e6ce2
   color MyBlue
 ```
 
-*Css*
+_Css_
 
 ```css
 .menu {}
@@ -94,15 +94,15 @@ MyBlue = #1e6ce2
 
 2. Separacion del contenedor y el contenido: Se evita el uso de selectores dependientes, por ejemplo Aside h2 {}, pues h2 ya deberia estar definido con sus modificadores.
 
-#####Ejemplo
+_Ejemplo_
 
-*Jade*
+_Jade_
 
 ```html
 aside
  h2.modificador
 ```
-*Stylus*
+_Stylus_
 
 ```css
 h2 {}
@@ -110,7 +110,7 @@ h2.modificador {}
 aside {}
 ```
 
-*My* Framework esta influenciado por las [CSS Guidelines](https://github.com/csswizardry/CSS-Guidelines/) de Harry Roberts de [CSS wizardry](http://csswizardry.com/).
+_My_ Framework esta influenciado por las [CSS Guidelines](https://github.com/csswizardry/CSS-Guidelines/) de Harry Roberts de [CSS wizardry](http://csswizardry.com/).
 
 
 > Yo trabajo bajo OOCSS; Divido los componentes en estructura (objetos) y skin (extension). Como analogía (No ejemplo) observad lo siguiente:
@@ -129,7 +129,7 @@ aside {}
 > Si tienes que construir nuevos componentes divídelos en estructura y skin; construye la estructura del componente usando clases muy genéricas de manera que se puedan rehusar y añadirle las clases más específicas para estilizar y añadir diseño.
 
 
-*Documentación:*
+_Documentación:_
 
  |[Wiki OOCSS](https://github.com/stubbornella/oocss/wiki/)
  |[Blog del Autor](http://www.stubbornella.org/)
