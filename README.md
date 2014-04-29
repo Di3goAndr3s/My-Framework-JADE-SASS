@@ -19,11 +19,16 @@ Es un framework Html y Css compilado en Jade y Stylus
 
 ## ¿Por que Jade y Stylus?
 
-La respuesta es sencilla. Un código Stylus es muchísimo más sencillo de mantener, menos horas de trabajo que significa menos costes que un CSS en bruto. Asi mismo un codigo Jade es mas rapido, limpio y eficiente que un Html neto.
+La respuesta es sencilla. Un código Stylus es muchísimo más sencillo de mantener, con menos horas de trabajo que significa menos costes que un CSS en bruto. Asi mismo un codigo Jade es mas rapido, limpio y eficiente que un Html neto.
 
 Aunque tienen una curva de aprendizaje moderada, se van a encontrar con dos lenguajes de alto nivel, completos y documentados. Es cuestion de acostumbrarse a la identación y a la sintaxis. 
 
-Por otro lado, __My__ busca ser, en un futuro, un framework funcional en frameworks como express.js para node.js.
+Por otro lado, __My__ busca integrarse, en un futuro, con frameworks de aplicaciones como expressjs para nodejs.
+
+**Documentación:**
+
+ [Sitio oficial Jade](http://jade-lang.com/)
+ | [Sitio oficial Stylus](http://learnboost.github.io/stylus/)
 
 ## Influencias My
 
