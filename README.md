@@ -67,7 +67,8 @@ My framework utiliza los principios OOCSS (CSS orientado a objetos)
      <li><a href="#">Inicio</a>
      <li><a href="#">Quíenes somos</a>
      ...
-``` </ul>
+    </ul>
+```
 
   *Stylus*
 
@@ -111,7 +112,7 @@ My framework utiliza los principios OOCSS (CSS orientado a objetos)
 ```
 
 
-Citando a Harry Roberts de [CSSwizardry](http://csswizardry.com/) en su CSS Guidelines [Guidelines](https://github.com/csswizardry/CSS-Guidelines)
+Citando a Harry Roberts de [CSSwizardry](http://csswizardry.com/) [Chris Coyer](http://css-tricks.com/why-ems/) en su CSS Guidelines [Guidelines](https://github.com/csswizardry/CSS-Guidelines/)
 
 ```
 Yo trabajo bajo OOCSS; Divido los componentes en estructura (objetos) y skin (extension). Como analogía (No ejemplo) observad lo siguiente:
