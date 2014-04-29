@@ -8,26 +8,23 @@
 
 BEM es una metodología para nombrar y clasificar selectores CSS de manera estricta, transparente e informativa.
 
-                    _My_ Framework utiliza la nomenclatura BEM 
+    _My_ Framework utiliza la nomenclatura BEM 
 
-Bloque: es una entidad independiente. Puede ser simple o compuesto por otros bloques. Ej.: buscador (simple) o header (compuesto).
+Bloque: es una entidad independiente. Puede ser visto como u8n objeto o un modulo. Un ejemplo es el buscador o el header.
 
-```css
-    .bloque {}
-    .menu {}
-    .search {}
-```
+    `css
+     .bloque {}
+     .menu {}
+     .search {}
+    `
 
-(`)test(`)
-(`test)
+Elemento: parte de un bloque que cumple una función. Un ejemplo es un input o un button, una imagen o un enlace.
 
-Elemento: parte de un bloque que cumple una función. Ej.: input y button.
-
-```css
+    `css
     .bloque__elemento {}
     .menu__item {}
     .search__input {}
-```
+    `
 
 Modificador: con un modificador se crea un bloque similar a otro existente. Por ej. el activo de un menú.
 
