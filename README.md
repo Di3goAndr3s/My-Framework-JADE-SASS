@@ -8,7 +8,7 @@
 
 BEM es una metodología para nombrar y clasificar selectores CSS de manera estricta, transparente e informativa.
 
-_Bloque:_ es una entidad independiente. Puede ser visto como un objeto o un modulo. Un ejemplo es el buscador o el header.
+__Bloque:__ es una entidad independiente. Puede ser visto como un objeto o un modulo. Un ejemplo es el buscador o el header.
 
 ```css
 .bloque {}
@@ -16,20 +16,20 @@ _Bloque:_ es una entidad independiente. Puede ser visto como un objeto o un modu
 .search {}
 ```
 
-_Elemento:_ parte de un bloque que cumple una función. Un ejemplo es un input o un button, una imagen o un enlace.
+__Elemento:__  parte de un bloque que cumple una función. Un ejemplo es un input o un button, una imagen o un enlace.
 
 ```css
-    .bloque__elemento {}
-    .menu__item {}
-    .search__input {}
+.bloque__elemento {}
+.menu__item {}
+.search__input {}
 ```
 
-_Modificador:_ con un modificador se crea un bloque similar a otro existente. Por ej. el activo de un menú.
+__Modificador:__  con un modificador se crea un bloque similar a otro existente. Por ej. el activo de un menú.
 
 ```css
-    .bloque--modificador {}
-    .menu--activo {}
-    .search--error {}
+.bloque--modificador {}
+.menu--activo {}
+.search--error {}
 ```
 
 Los bloques y elementos buscan tener selectores únicos. Si el bloque es `.menu`, un elemento se llamaria `.menu__item` y un modificador sería `.menu__item–-activo`.
@@ -40,7 +40,7 @@ Los bloques y elementos buscan tener selectores únicos. Si el bloque es `.menu`
     .bloque--modificador {}
 ```
 
-_Documentación:_ [Sitio oficial BEM](http://bem.info/)
+__Documentación:__  [Sitio oficial BEM](http://bem.info/)
 
 #### OOCSS (CSS orientado a objetos)
 
@@ -49,18 +49,18 @@ OOCSS es una metodología basada en dos principios:
 
 1. División de los componentes en estructura(layout) y skin(theme). Esta separación de estructura y estilos nos permite trabajar de manera modular con los “skins” que se pueden aplicar a   los diversos módulos u objetos.
 
-_Ejemplo_
+__Ejemplo__ 
 
-_Jade_
+__Jade__ 
 
-```html
+```jade
 ul.menu.menu--left.menu--blue
-li:a(href="#") Inicio
-li:a(href="#") Quíenes somos
+ li:a(href="#") Inicio
+ li:a(href="#") Quíenes somos
 ...
 ```
 
-_Html_
+__Html__ 
 
 ```html
 <ul class="menu menu--left menu--blue"
@@ -70,7 +70,7 @@ _Html_
 </ul>
 ```
 
-_Stylus_
+__Stylus__ 
 
 ```css
 
@@ -84,7 +84,7 @@ MyBlue = #1e6ce2
   color MyBlue
 ```
 
-_Css_
+__Css__ 
 
 ```css
 .menu {}
@@ -94,15 +94,15 @@ _Css_
 
 2. Separacion del contenedor y el contenido: Se evita el uso de selectores dependientes, por ejemplo Aside h2 {}, pues h2 ya deberia estar definido con sus modificadores.
 
-_Ejemplo_
+__Ejemplo__
 
-_Jade_
+__Jade__
 
 ```html
 aside
  h2.modificador
 ```
-_Stylus_
+__Stylus__
 
 ```css
 h2 {}
@@ -110,7 +110,7 @@ h2.modificador {}
 aside {}
 ```
 
-_My_ Framework esta influenciado por las [CSS Guidelines](https://github.com/csswizardry/CSS-Guidelines/) de Harry Roberts de [CSS wizardry](http://csswizardry.com/).
+__My__ Framework esta influenciado por las [CSS Guidelines](https://github.com/csswizardry/CSS-Guidelines/) de Harry Roberts de [CSS wizardry](http://csswizardry.com/).
 
 
 > Yo trabajo bajo OOCSS; Divido los componentes en estructura (objetos) y skin (extension). Como analogía (No ejemplo) observad lo siguiente:
@@ -129,7 +129,7 @@ _My_ Framework esta influenciado por las [CSS Guidelines](https://github.com/css
 > Si tienes que construir nuevos componentes divídelos en estructura y skin; construye la estructura del componente usando clases muy genéricas de manera que se puedan rehusar y añadirle las clases más específicas para estilizar y añadir diseño.
 
 
-_Documentación:_
+**Documentación:**
 
  |[Wiki OOCSS](https://github.com/stubbornella/oocss/wiki/)
  |[Blog del Autor](http://www.stubbornella.org/)
