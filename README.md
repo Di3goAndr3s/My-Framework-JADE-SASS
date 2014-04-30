@@ -33,7 +33,7 @@ La respuesta es sencilla. Un código Stylus es muchísimo más sencillo de mante
 
 Aunque tienen una curva de aprendizaje moderada, se van a encontrar con dos lenguajes de alto nivel, completos y documentados. Es cuestion de acostumbrarse a la identación y a la sintaxis. 
 
-Por otro lado, __My__ busca integrarse, en un futuro, con frameworks de aplicaciones como expressjs para nodejs.
+Por otro lado, _My_ busca integrarse, en un futuro, con frameworks de aplicaciones como expressjs para nodejs.
 
 **Documentación:**
 
@@ -362,15 +362,31 @@ __Documentación:__  [Sitio oficial SMACSS](http://smacss.com/)
 My propone dos entornos de trabajo, uno de desarrollo llamado development donde se almacenan las carpetas y archivos con las que vamos a trabajar
 
 `
--Development
- - Stylus
-  - componentes
-   - Botones
-   - Formularios
-   - Grilla
-   - ...
-- CSS
-- Jade
+--development
+  _core
+    _stylus
+      _components.styl
+      _buttons.styl
+      _forms.styl
+      _grid.styl
+      _...
+    _jade
+      _mixins.jade
+      _variables.jade
+  _stylus
+    _main.styl
+    _base.styl
+    _layout.styl
+    _...SMACSS
+  _css
+   _main.css
+   _libs.css
+ _jade
+  _index.jade
+  _....jade
+ _
+
+
 
 
 `
