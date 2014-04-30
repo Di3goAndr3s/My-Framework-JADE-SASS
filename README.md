@@ -357,11 +357,27 @@ __Css__
 
 __Documentación:__  [Sitio oficial SMACSS](http://smacss.com/)
 
-## Estructura My
+## My Estructura 
 
-## Stylus y My
+My propone dos entornos de trabajo, uno de desarrollo llamado development donde se almacenan las carpetas y archivos con las que vamos a trabajar
 
-## Jade y My
+`
+-Development
+ - Stylus
+  - componentes
+   - Botones
+   - Formularios
+   - Grilla
+   - ...
+- CSS
+- Jade
 
-## Preprocesando My
+
+`
+
+
+## My Stylus
+## My Jade
+
+## Preprocesando
 
