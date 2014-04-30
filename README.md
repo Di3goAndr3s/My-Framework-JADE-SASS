@@ -4,20 +4,28 @@
 
 ## ¿Qué es My?
 
-Es un framework Html y Css compilado en Jade y Stylus. Utilizar `My` implica trabajar con una metodología agil y moderna que trae beneficios para el mantenimiento, escalabilidad y desarrollo de los proyectos.
+Es un framework Html y Css compilado en Jade y Stylus. Utilizar _My_ implica trabajar con una metodología agil y moderna que trae beneficios para el mantenimiento, escalabilidad y desarrollo de los proyectos.
 
-## ¿Por que My y que tiene de diferente vs otros frameworks?
+_My_ nace de la necesidad de documentar y estandarizar el marco de trabajo que uso para marcar y estilizar en mi oficio como front-end.
 
-**My** nace de la necesidad de documentar y estandarizar el marco de trabajo que uso para marcar y estilizar en mi oficio como front-end. Busca marcar la diferencia en los siguientes puntos:
+## ¿Por que My?
 
-+ Posee un sistema de grilla flexible basado en modelo de caja flexible `display flex`.
-+ Tiene patrones(mixins) Html y Css que permiten hacer una arquitectura modular y escalable.
-+ Posee patrones Easing(cubic-bezier) que permitan usar transiciones CSS3 avanzadas.
+Se llama _My_ por que espera que quien lo use se apropie de el y lo haga suyo. Esta diseñado para que todo el html y css se modificado sin afectar la metodologia de trabajo que enmarca el framework.
+
+## ¿Qué lo hace diferente a otros frameworks?
+
++ Posee un sistema de grilla flexible basado en el modelo de caja flexible `display flex`.
++ Posee patrones Easing mediante cubic-bezier que permiten usar transiciones CSS3 avanzadas.
 + Mixins integrados con Font-awesome para crear iconos de manera rapida desde el html o desde el Css con las pseudoclases `::after` y `::before`.
-+ Busca generar bloques, bloques de elementos y modificadores de elementos de manera eficiente tanto en html como en css.
-+ Html compilado en Jade y CSS compilado en Stylus.
-+ Busca generar buenas practicas al obligar al desarrollador a escribir un codigo limpio e identado.
-+ Incluye elementos de bloques como botones, enlaces, imagenes, titulos, elementos de formularios, paneles, columnas con sus respectivos modificadores.
++ Mixin y variables Html predifinidas mediante Jade
++ Los componentes cumplen con el nivel de conformidad A de accesibilidad web.
++ Los componentes cumplen con las 10 reglas de usabilidad web de [Jakob Nielsen](http://www.nngroup.com/articles/ten-usability-heuristics/) 
+
+## ¿Qué lo hace igual a otros frameworks?
+
++ Busca generar bloques, bloques de elementos y modificadores de elementos de manera eficiente tanto en Html como en Css.
++ Tiene patrones Css que permiten hacer una arquitectura modular y escalable.
++ Busca generar buenas practicas en el codigo.
 
 ## ¿Por que Jade y Stylus?
 
@@ -42,7 +50,9 @@ Por otro lado, __My__ busca integrarse, en un futuro, con frameworks de aplicaci
 
 ### Flex Layout
 
-Todos los bloques construido con **My** no deberian tener anchos `width auto` ni altos fijos `height auto`. Buscan ser fluidos y su _Width_ es regido por su contenedor o por su grid.
+> un modelo de cajas de CSS optimizado para diseño de interfaces. Flexbox proporciona un sistema de diseño adicional a los que ya ofrece CSS. [CSS21] En este nuevo modelo de cajas, los elementos secundarios de una caja se disponen tanto horizontal como verticalmente, y el espacio no utilizado puede asignarse a un elemento secundario específico o distribuirse entre los diferentes elementos secundarios mediante la asignación de "flex" a los elementos secundarios que se deben expandir. El anidamiento de estas cajas (horizontal dentro de vertical o vertical dentro de horizontal) se puede utilizar para crear diseños en dos dimensiones. Flexbox se basa en el modelo de cajas del lenguaje de interfaz de usuario XUL que se utiliza en la interfaz de usuario de un gran número de aplicaciones basadas en Mozilla (como Firefox).
+
+`Todos los bloques construido con **My** no deberian tener anchos `width auto` ni altos fijos `height auto`. Buscan ser fluidos y su _Width_ es regido por su contenedor o por su grid.`
 
 **Documentación:** 
  [Chris Coyier](http://css-tricks.com/snippets/css/a-guide-to-flexbox/) 
@@ -51,7 +61,7 @@ Todos los bloques construido con **My** no deberian tener anchos `width auto` ni
 
 ### CSS Guidelines
 
-__**My** Framework__ esta influenciado por las [CSS Guidelines](https://github.com/csswizardry/CSS-Guidelines/) de Harry Roberts de [CSS wizardry](http://csswizardry.com/).
+`_My_ Framework__ esta influenciado por las [CSS Guidelines](https://github.com/csswizardry/CSS-Guidelines/) de Harry Roberts de [CSS wizardry](http://csswizardry.com/).`
 
 Harry Roberts dice:
 
@@ -70,7 +80,7 @@ Harry Roberts dice:
 
 > Si tienes que construir nuevos componentes divídelos en estructura y skin; construye la estructura del componente usando clases muy genéricas de manera que se puedan rehusar y añadirle las clases más específicas para estilizar y añadir diseño.
 
-## Arquitectura My
+### Arquitectura CSS
 
 #### BEM (bloque, elemento, modificador)
 
