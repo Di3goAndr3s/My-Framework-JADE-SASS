@@ -52,7 +52,7 @@ Por otro lado, __My__ busca integrarse, en un futuro, con frameworks de aplicaci
 
 > un modelo de cajas de CSS optimizado para diseño de interfaces. Flexbox proporciona un sistema de diseño adicional a los que ya ofrece CSS. [CSS21] En este nuevo modelo de cajas, los elementos secundarios de una caja se disponen tanto horizontal como verticalmente, y el espacio no utilizado puede asignarse a un elemento secundario específico o distribuirse entre los diferentes elementos secundarios mediante la asignación de "flex" a los elementos secundarios que se deben expandir. El anidamiento de estas cajas (horizontal dentro de vertical o vertical dentro de horizontal) se puede utilizar para crear diseños en dos dimensiones. Flexbox se basa en el modelo de cajas del lenguaje de interfaz de usuario XUL que se utiliza en la interfaz de usuario de un gran número de aplicaciones basadas en Mozilla (como Firefox).
 
-`Todos los bloques construido con **My** no deberian tener anchos `width auto` ni altos fijos `height auto`. Buscan ser fluidos y su _Width_ es regido por su contenedor o por su grid.`
+`Todos los bloques construidos  no deberian tener anchos ni altos fijos. Buscan ser fluidos y su alyo y ancho es regido por su contenedor o por su grid.`
 
 **Documentación:** 
  [Chris Coyier](http://css-tricks.com/snippets/css/a-guide-to-flexbox/) 
@@ -61,7 +61,7 @@ Por otro lado, __My__ busca integrarse, en un futuro, con frameworks de aplicaci
 
 ### CSS Guidelines
 
-`_My_ Framework__ esta influenciado por las [CSS Guidelines](https://github.com/csswizardry/CSS-Guidelines/) de Harry Roberts de [CSS wizardry](http://csswizardry.com/).`
+> _My_ Framework__ esta influenciado por las [CSS Guidelines](https://github.com/csswizardry/CSS-Guidelines/) de Harry Roberts de [CSS wizardry](http://csswizardry.com/).
 
 Harry Roberts dice:
 
