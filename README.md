@@ -2,24 +2,31 @@
 
 ### Modern framework Jade/Stylus
 + For methodological front ends
-+ With Web Accessibility A & AA
-+ With the 10 Usability Heuristics for User Interface Design
-+ Wirh Bower and grunt Integration
++ With Web Accessibility A & AA from W3C
++ With the Usability Heuristics for User Interface Design from Jakob Nielsen
++ With Bower and grunt Integration
+
 ---
 
 ## ¿Qué es My?
 
-Es un framework Html y Css compilado en Jade y Stylus. Utilizar _My_ implica trabajar con una metodología agil y moderna que trae beneficios para el mantenimiento, escalabilidad y desarrollo de los proyectos.
+Es un marco de trabajo Html y Css compilado en Jade y Stylus. Utilizar _My_ implica trabajar con una metodología agil y moderna que trae beneficios para el mantenimiento, escalabilidad y desarrollo de los proyectos.
 
-_My_ nace de la necesidad de documentar y estandarizar un marco de trabajo que permita trabajar de manera modular...
+_My_ nace de la necesidad de documentar y estandarizar un framework que permita trabajar de manera modular bajo standars internacionales.
 
 ## ¿Por que My?
 
-Se llama _My_ por que espera que quien lo use se apropie de el y lo haga suyo. Espera ser un marco de trabajo metodologico para desarrolladores front-end que esperan tener un marco de trabajo moderno.
+Se llama _My_ por que se espera que quien lo use se apropie de el y lo haga suyo. Espera ser un marco de trabajo metodologico para desarrolladores front-end que esperan tener un flujo de trabajo moderno.
 
 ## Compatibilidad con otros frameworks y/o extensiones
 
-Total compatibilidad con framewors como Boostrap y Foundation, y con extensiones stylus como Nib
+Total compatibilidad con frameworks como Boostrap y Foundation, y con extensiones como Nib.
+
+## Crossbrowsing
+
+Compatibilidad con las ultimas versiones de Google Chrome, Mozilla Firefox e Internet explorer.
+
+> Al ser un framework moderno, no se soporta en versiones de Internet explorer menor a la 10.
 
 ## ¿Qué lo hace diferente a otros frameworks?
 
@@ -42,12 +49,12 @@ La respuesta es sencilla. Un código Stylus es muchísimo más sencillo de mante
 
 Aunque tienen una curva de aprendizaje moderada, se van a encontrar con dos lenguajes de alto nivel, completos y documentados. Es cuestion de acostumbrarse a la identación y a la sintaxis.
 
-Por otro lado, _My_ busca integrarse, en un futuro, con frameworks de aplicaciones como expressjs para nodejs.
+Por otro lado, _My_ busca integrarse, en un futuro, con frameworks como expressjs que suelen trabajar con Jade y Stylus.
 
 **Documentación:**
 
- [Sitio oficial Jade](http://jade-lang.com/)
- | [Sitio oficial Stylus](http://learnboost.github.io/stylus/)
+[Sitio oficial Jade](http://jade-lang.com/)
+| [Sitio oficial Stylus](http://learnboost.github.io/stylus/)
 
 ## Influencias My
 
@@ -63,9 +70,9 @@ No te repitas o DRY es una la filosofia clave para trabajar de manera modular y 
 
 ### Flex Layout
 
-Los modelos de caja usado en _My_ no tienen ancho, ni alto fijo. Son cajas flexibles regidas por su contenedor o por su grid....
+Los modelos de caja usado en _My_ no tienen ancho, ni alto fijo. Son cajas flexibles regidas por su contenedor o por su grilla.
 
-> un modelo de cajas de CSS optimizado para diseño de interfaces. Flexbox proporciona un sistema de diseño adicional a los que ya ofrece CSS. En este nuevo modelo de cajas, los elementos secundarios de una caja se disponen tanto horizontal como verticalmente, y el espacio no utilizado puede asignarse a un elemento secundario específico o distribuirse entre los diferentes elementos secundarios mediante la asignación de "flex" a los elementos secundarios que se deben expandir.
+> Flexbox proporciona un sistema de diseño adicional a los que ya ofrece CSS. En este nuevo modelo de cajas, los elementos secundarios de una caja se disponen tanto horizontal como verticalmente, y el espacio no utilizado puede asignarse a un elemento secundario específico o distribuirse entre los diferentes elementos secundarios mediante la asignación de "flex" a los elementos secundarios que se deben expandir.
 
 **Documentación:**
  [Chris Coyier](http://css-tricks.com/snippets/css/a-guide-to-flexbox/)
@@ -137,13 +144,13 @@ My propone dos entornos de trabajo, uno de desarrollo llamado development donde 
 `
 -development
  -core
- -stylus
-   -components.styl
-      _buttons.styl
-      _forms.styl
-      _grid.styl
-      _...
-    _jade
+  -stylus
+  -components.styl
+  -buttons.styl
+  -forms.styl
+  -grid.styl
+  -...
+    -jade
       _mixins.jade
       _variables.jade
   _stylus
