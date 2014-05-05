@@ -4,7 +4,7 @@
 + For methodological front ends
 + With Web Accessibility A & AA from W3C
 + With the Usability Heuristics for User Interface Design from Jakob Nielsen
-+ With Bower and grunt Integration
++ With Bower and Grunt Integration
 
 ---
 
