@@ -1,6 +1,10 @@
 # *My* framework
 
-### Modern front-end framework JADE/STYLUS
+### Modern & simple framework Jade/Stylus
+### For methodological front ends
+### With Web Accessibility A & AA
+### With the 10 Usability Heuristics for User Interface Design
+### Bower and grunt Integration
 
 ## ¿Qué es My?
 
@@ -94,6 +98,86 @@ Harry Roberts dice:
 
 BEM es una metodología para nombrar y clasificar selectores CSS de manera estricta, transparente e informativa.
 
+
+__Documentación:__  [Sitio oficial BEM](http://bem.info/)
+
+#### OOCSS (CSS orientado a objetos)
+
+OOCSS es una metodología basada en dos principios:
+
++ División de los componentes en estructura(layout) y skin(theme). Esta separación de estructura y estilos nos permite trabajar de manera modular con los “skins” que se pueden aplicar a   los diversos módulos u objetos.
+
+
+
++ Separacion del contenedor y el contenido: Se evita el uso de selectores dependientes, por ejemplo `Aside h2 {}`, pues `h2` ya deberia estar definido con sus modificadores.
+
+__Ejemplo__
+
+__Jade__
+
+```html
+aside
+ h2.modificador
+```
+__Stylus__
+
+```css
+h2 {}
+h2.modificador {}
+aside {}
+```
+**Documentación:**
+
+ [Wiki OOCSS](https://github.com/stubbornella/oocss/wiki/)
+ | [Blog del Autor](http://www.stubbornella.org/)
+
+
+#### SMACSS (Arquitectura escalable y modular para CSS)
+
+SMACSS es una arquitectura y filosofía, tambien llamadada guia de estilos, para la estructuración de las hojas de estilos de un proyecto, buscando facilitar la mantenibilidad y flexibilidad, mediante la categorización de los estilos en diferentes archivos.
+
+
+__Documentación:__  [Sitio oficial SMACSS](http://smacss.com/)
+
+
+## My Stylus
+## My Jade
+
+## My Estructura de archivos
+
+My propone dos entornos de trabajo, uno de desarrollo llamado development donde se almacenan las carpetas y archivos con las que vamos a trabajar
+
+`
+-development
+ -core
+ -stylus
+   -components.styl
+      _buttons.styl
+      _forms.styl
+      _grid.styl
+      _...
+    _jade
+      _mixins.jade
+      _variables.jade
+  _stylus
+    _main.styl
+    _base.styl
+    _layout.styl
+    _...SMACSS
+  _css
+   _main.css
+   _libs.css
+ _jade
+  _index.jade
+  _....jade
+ _
+
+
+
+
+`
+## My Nomenclatura
+
 __Bloque:__ es una entidad independiente. Puede ser visto como un objeto o un modulo. Un ejemplo es el buscador o el header.
 
 ```css
@@ -126,13 +210,7 @@ Los bloques y elementos buscan tener selectores únicos. Si el bloque es `.menu`
 .bloque--modificador {}
 ```
 
-__Documentación:__  [Sitio oficial BEM](http://bem.info/)
-
-#### OOCSS (CSS orientado a objetos)
-
-OOCSS es una metodología basada en dos principios:
-
-+ División de los componentes en estructura(layout) y skin(theme). Esta separación de estructura y estilos nos permite trabajar de manera modular con los “skins” que se pueden aplicar a   los diversos módulos u objetos.
+## My Metodologia
 
 __Ejemplo__
 
@@ -177,32 +255,7 @@ __Css__
 .menu .menu--blue {color: #1e6ce2;}
 ```
 
-+ Separacion del contenedor y el contenido: Se evita el uso de selectores dependientes, por ejemplo `Aside h2 {}`, pues `h2` ya deberia estar definido con sus modificadores.
-
-__Ejemplo__
-
-__Jade__
-
-```html
-aside
- h2.modificador
-```
-__Stylus__
-
-```css
-h2 {}
-h2.modificador {}
-aside {}
-```
-**Documentación:**
-
- [Wiki OOCSS](https://github.com/stubbornella/oocss/wiki/)
- | [Blog del Autor](http://www.stubbornella.org/)
-
-
-#### SMACSS (Arquitectura escalable y modular para CSS)
-
-SMACSS es una arquitectura y filosofía, tambien llamadada guia de estilos, para la estructuración de las hojas de estilos de un proyecto, buscando facilitar la mantenibilidad y flexibilidad, mediante la categorización de los estilos en diferentes archivos.
+##My Estructura de archivos
 
 SMACSS define cinco categorías o archivos que apropia __My__:
 
@@ -363,45 +416,11 @@ __Css__
 }
 ```
 
-__Documentación:__  [Sitio oficial SMACSS](http://smacss.com/)
+## Automatización de tareas
 
-## My Estructura
+###Bower
 
-My propone dos entornos de trabajo, uno de desarrollo llamado development donde se almacenan las carpetas y archivos con las que vamos a trabajar
+###Grunt
 
-`
---development
-  _core
-    _stylus
-      _components.styl
-      _buttons.styl
-      _forms.styl
-      _grid.styl
-      _...
-    _jade
-      _mixins.jade
-      _variables.jade
-  _stylus
-    _main.styl
-    _base.styl
-    _layout.styl
-    _...SMACSS
-  _css
-   _main.css
-   _libs.css
- _jade
-  _index.jade
-  _....jade
- _
-
-
-
-
-`
-
-
-## My Stylus
-## My Jade
-
-## Preprocesando
+###Yeoman (PROXIMAMENTE)
 
