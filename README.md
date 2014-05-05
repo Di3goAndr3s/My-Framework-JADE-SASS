@@ -1,11 +1,10 @@
 # *My* framework
 
 ### Modern framework Jade/Stylus
-For methodological front ends
-With Web Accessibility A & AA
-With the 10 Usability Heuristics for User Interface Design
-Bower and grunt Integration
-
++ For methodological front ends
++ With Web Accessibility A & AA
++ With the 10 Usability Heuristics for User Interface Design
++ Wirh Bower and grunt Integration
 ---
 
 ## ¿Qué es My?
