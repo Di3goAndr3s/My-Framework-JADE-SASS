@@ -1,10 +1,10 @@
 # *My* framework
 
 ### Modern & simple framework Jade/Stylus
-### For methodological front ends
-### With Web Accessibility A & AA
-### With the 10 Usability Heuristics for User Interface Design
-### Bower and grunt Integration
+|For methodological front ends
+|With Web Accessibility A & AA
+|With the 10 Usability Heuristics for User Interface Design
+|Bower and grunt Integration
 
 ## ¿Qué es My?
 
@@ -111,21 +111,7 @@ OOCSS es una metodología basada en dos principios:
 
 + Separacion del contenedor y el contenido: Se evita el uso de selectores dependientes, por ejemplo `Aside h2 {}`, pues `h2` ya deberia estar definido con sus modificadores.
 
-__Ejemplo__
 
-__Jade__
-
-```html
-aside
- h2.modificador
-```
-__Stylus__
-
-```css
-h2 {}
-h2.modificador {}
-aside {}
-```
 **Documentación:**
 
  [Wiki OOCSS](https://github.com/stubbornella/oocss/wiki/)
@@ -253,6 +239,22 @@ __Css__
 .menu {}
 .menu .menu--left {float: left;}
 .menu .menu--blue {color: #1e6ce2;}
+```
+
+__Ejemplo__
+
+__Jade__
+
+```html
+aside
+ h2.modificador
+```
+__Stylus__
+
+```css
+h2 {}
+h2.modificador {}
+aside {}
 ```
 
 ##My Estructura de archivos
