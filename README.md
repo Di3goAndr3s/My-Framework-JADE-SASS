@@ -1,8 +1,5 @@
 # *My* framework
 
-
-![alt text](My.png "Title")
-
 =======
 
 ### Modern framework Jade/Stylus
@@ -10,11 +7,10 @@
 + With Web Accessibility A & AA from W3C
 + With the Usability Heuristics for User Interface Design from Jakob Nielsen
 + With Bower and Grunt Integration
-=======
-+ With Bower and Grunt Integration
-
 
 ---
+
+![alt text](My.png "My Framework")
 
 ## ¿Qué es My?
 
