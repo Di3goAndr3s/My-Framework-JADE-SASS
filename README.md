@@ -1,6 +1,6 @@
 # *My* framework
 
-### Modern & simple framework Jade/Stylus
+### Modern framework Jade/Stylus
 For methodological front ends
 With Web Accessibility A & AA
 With the 10 Usability Heuristics for User Interface Design
