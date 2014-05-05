@@ -144,27 +144,29 @@ My propone dos entornos de trabajo, uno de desarrollo llamado development donde 
 `
 -development
  -core
+   -stylus
+    -components
+     -buttons.styl
+     -forms.styl
+     -grid.styl
+      -...
+   -jade
+     -components
+      -mixins.jade
+      -variables.jade
   -stylus
-  -components.styl
-  -buttons.styl
-  -forms.styl
-  -grid.styl
-  -...
-    -jade
-      _mixins.jade
-      _variables.jade
-  _stylus
     _main.styl
     _base.styl
     _layout.styl
     _...SMACSS
-  _css
-   _main.css
-   _libs.css
- _jade
-  _index.jade
-  _....jade
- _
+  -css
+   -main.css
+   -libs.css
+  -jade
+  -index.jade
+  -....jade
+-production
+ 
 
 
 
