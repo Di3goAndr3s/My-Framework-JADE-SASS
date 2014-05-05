@@ -6,20 +6,24 @@
 
 Es un framework Html y Css compilado en Jade y Stylus. Utilizar _My_ implica trabajar con una metodología agil y moderna que trae beneficios para el mantenimiento, escalabilidad y desarrollo de los proyectos.
 
-_My_ nace de la necesidad de documentar y estandarizar el marco de trabajo que uso para marcar y estilizar en mi oficio como front-end.
+_My_ nace de la necesidad de documentar y estandarizar un marco de trabajo que permita trabajar de manera modular...
 
 ## ¿Por que My?
 
-Se llama _My_ por que espera que quien lo use se apropie de el y lo haga suyo. Esta diseñado para que todo el html y css se modificado sin afectar la metodologia de trabajo que enmarca el framework.
+Se llama _My_ por que espera que quien lo use se apropie de el y lo haga suyo. Espera ser un marco de trabajo metodologico para desarrolladores front-end que esperan tener un marco de trabajo moderno.
+
+## Compatibilidad con otros frameworks y/o extensiones
+
+Total compatibilidad con framewors como Boostrap y Foundation, y con extensiones stylus como Nib
 
 ## ¿Qué lo hace diferente a otros frameworks?
 
 + Posee un sistema de grilla flexible basado en el modelo de caja flexible `display flex`.
 + Posee patrones Easing mediante cubic-bezier que permiten usar transiciones CSS3 avanzadas.
-+ Mixins integrados con Font-awesome para crear iconos de manera rapida desde el html o desde el Css con las pseudoclases `::after` y `::before`.
++ Mixins integrados con Font-awesome para crear iconos y "social shares" de manera rapida, ya sea desde el html o desde el Css con las pseudoclases `::after` y `::before`.
 + Mixin y variables Html predifinidas mediante Jade
-+ Los componentes cumplen con el nivel de conformidad A de accesibilidad web.
-+ Los componentes cumplen con las 10 reglas de usabilidad web de [Jakob Nielsen](http://www.nngroup.com/articles/ten-usability-heuristics/) 
++ Los componentes cumplen con el nivel de conformidad A y AA de accesibilidad web.
++ Los componentes cumplen con las 10 reglas de usabilidad web de [Jakob Nielsen](http://www.nngroup.com/articles/ten-usability-heuristics/)
 
 ## ¿Qué lo hace igual a otros frameworks?
 
@@ -31,7 +35,7 @@ Se llama _My_ por que espera que quien lo use se apropie de el y lo haga suyo. E
 
 La respuesta es sencilla. Un código Stylus es muchísimo más sencillo de mantener, con menos horas de trabajo que significa menos costes que un CSS en bruto. Asi mismo un codigo Jade es mas rapido, limpio y eficiente que un Html neto.
 
-Aunque tienen una curva de aprendizaje moderada, se van a encontrar con dos lenguajes de alto nivel, completos y documentados. Es cuestion de acostumbrarse a la identación y a la sintaxis. 
+Aunque tienen una curva de aprendizaje moderada, se van a encontrar con dos lenguajes de alto nivel, completos y documentados. Es cuestion de acostumbrarse a la identación y a la sintaxis.
 
 Por otro lado, _My_ busca integrarse, en un futuro, con frameworks de aplicaciones como expressjs para nodejs.
 
@@ -42,26 +46,30 @@ Por otro lado, _My_ busca integrarse, en un futuro, con frameworks de aplicacion
 
 ## Influencias My
 
-### Filosofía NRY
+### Filosofía DRY
 
->El principio No te repitas (en inglés Don't Repeat Yourself o DRY, también conocido como Una vez y sólo una) es una filosofía de definición de procesos que promueve la reducción de la duplicación especialmente en computación. Según este principio toda pieza de información nunca debería ser duplicada debido a que la duplicación incrementa la dificultad en los cambios y evolución posterior, puede perjudicar la claridad y crear un espacio para posibles inconsistencias. Por "pieza de información" podemos entender, en un sentido amplio, desde datos almacenados en una base de datos pasando por el código fuente de un programa de software hasta llegar a información textual o documentación.
+No te repitas o DRY es una la filosofia clave para trabajar de manera modular y escalable...
 
->Cuando el principio DRY se aplica de forma eficiente los cambios en cualquier parte del proceso requieren cambios en un único lugar. Por el contrario, si algunas partes del proceso están repetidas por varios sitios, los cambios pueden provocar fallos con mayor facilidad si todos los sitios en los que aparece no se encuentran sincronizados.
+> El principio No te repitas (en inglés Don't Repeat Yourself o DRY) es una filosofía de definición de procesos que promueve la reducción de la duplicación. Según este principio toda pieza de información nunca debería ser duplicada debido a que la duplicación incrementa la dificultad en los cambios y evolución posterior, puede perjudicar la claridad y crear un espacio para posibles inconsistencias.
+
+**Documentación:**
+
+[Wikipedia](http://en.wikipedia.org/wiki/Don't_repeat_yourself/)
 
 ### Flex Layout
 
-> un modelo de cajas de CSS optimizado para diseño de interfaces. Flexbox proporciona un sistema de diseño adicional a los que ya ofrece CSS. [CSS21] En este nuevo modelo de cajas, los elementos secundarios de una caja se disponen tanto horizontal como verticalmente, y el espacio no utilizado puede asignarse a un elemento secundario específico o distribuirse entre los diferentes elementos secundarios mediante la asignación de "flex" a los elementos secundarios que se deben expandir. El anidamiento de estas cajas (horizontal dentro de vertical o vertical dentro de horizontal) se puede utilizar para crear diseños en dos dimensiones. Flexbox se basa en el modelo de cajas del lenguaje de interfaz de usuario XUL que se utiliza en la interfaz de usuario de un gran número de aplicaciones basadas en Mozilla (como Firefox).
+Los modelos de caja usado en _My_ no tienen ancho, ni alto fijo. Son cajas flexibles regidas por su contenedor o por su grid....
 
-`Todos los bloques construidos  no deberian tener anchos ni altos fijos. Buscan ser fluidos y su alyo y ancho es regido por su contenedor o por su grid.`
+> un modelo de cajas de CSS optimizado para diseño de interfaces. Flexbox proporciona un sistema de diseño adicional a los que ya ofrece CSS. En este nuevo modelo de cajas, los elementos secundarios de una caja se disponen tanto horizontal como verticalmente, y el espacio no utilizado puede asignarse a un elemento secundario específico o distribuirse entre los diferentes elementos secundarios mediante la asignación de "flex" a los elementos secundarios que se deben expandir.
 
-**Documentación:** 
- [Chris Coyier](http://css-tricks.com/snippets/css/a-guide-to-flexbox/) 
+**Documentación:**
+ [Chris Coyier](http://css-tricks.com/snippets/css/a-guide-to-flexbox/)
  | [David Walsh](http://davidwalsh.name/stylus-grid/)
- | [Philip Walton](http://philipwalton.github.io/solved-by-flexbox/demos/grids/) 
+ | [Philip Walton](http://philipwalton.github.io/solved-by-flexbox/demos/grids/)
 
 ### CSS Guidelines
 
-> _My_ Framework__ esta influenciado por las [CSS Guidelines](https://github.com/csswizardry/CSS-Guidelines/) de Harry Roberts de [CSS wizardry](http://csswizardry.com/).
+_My_ esta influenciado por las [CSS Guidelines](https://github.com/csswizardry/CSS-Guidelines/) de Harry Roberts de [CSS wizardry](http://csswizardry.com/).
 
 Harry Roberts dice:
 
@@ -126,9 +134,9 @@ OOCSS es una metodología basada en dos principios:
 
 + División de los componentes en estructura(layout) y skin(theme). Esta separación de estructura y estilos nos permite trabajar de manera modular con los “skins” que se pueden aplicar a   los diversos módulos u objetos.
 
-__Ejemplo__ 
+__Ejemplo__
 
-__Jade__ 
+__Jade__
 
 ```jade
 ul.menu.menu--left.menu--blue
@@ -137,7 +145,7 @@ ul.menu.menu--left.menu--blue
 ...
 ```
 
-__Html__ 
+__Html__
 
 ```html
 <ul class="menu menu--left menu--blue"
@@ -147,7 +155,7 @@ __Html__
 </ul>
 ```
 
-__Stylus__ 
+__Stylus__
 
 ```css
 
@@ -156,12 +164,12 @@ MyBlue = #1e6ce2
 .menu
  .menu--left
   float left
-  
+
  .menu--blue
   color MyBlue
 ```
 
-__Css__ 
+__Css__
 
 ```css
 .menu {}
@@ -196,7 +204,7 @@ aside {}
 
 SMACSS es una arquitectura y filosofía, tambien llamadada guia de estilos, para la estructuración de las hojas de estilos de un proyecto, buscando facilitar la mantenibilidad y flexibilidad, mediante la categorización de los estilos en diferentes archivos.
 
-SMACSS define cinco categorías o archivos que apropia __My__: 
+SMACSS define cinco categorías o archivos que apropia __My__:
 
 **Base:**
 En esta categoría se incluyen los estilos base de nuestro proyecto, incluyendo reset o el Normalize.css, tipografías y márgenes básicos de todo el sitio.
@@ -210,14 +218,14 @@ color1 = #01DFFD
 color2 = color1 * 2
 
 body
-form 
+form
  margin 0
  padding 0
 
-a 
+a
  color color1
- &:hover 
-  color color2   
+ &:hover
+  color color2
 ```
 
 __Css__
@@ -233,7 +241,7 @@ a {
 }
 
 a:hover {
-    color: #03F;    
+    color: #03F;
 }
 ```
 **Module:**
@@ -245,9 +253,9 @@ __Stylus__
 
 ```css
 .module
- h2 
+ h2
   padding 5px
- span 
+ span
   padding 15px
 ```
 
@@ -271,11 +279,11 @@ __Ejemplo__
 __Stylus__
 
 ```css
-.error 
+.error
   background-color red
   color white
-    
-.is-tab-active 
+
+.is-tab-active
   background-color white
   color black
 ```
@@ -306,7 +314,7 @@ anchoBox = 960px
 
 header
 article
-footer 
+footer
   width anchoBox
   margin auto
 
@@ -339,8 +347,8 @@ __Stylus__
 ```css
 .borderSlider
   border 1px solid
-  
-.borderSliderblue 
+
+.borderSliderblue
     border-color color1
 ```
 
@@ -357,7 +365,7 @@ __Css__
 
 __Documentación:__  [Sitio oficial SMACSS](http://smacss.com/)
 
-## My Estructura 
+## My Estructura
 
 My propone dos entornos de trabajo, uno de desarrollo llamado development donde se almacenan las carpetas y archivos con las que vamos a trabajar
 
