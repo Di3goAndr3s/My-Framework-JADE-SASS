@@ -1,12 +1,18 @@
 # *My* framework
 
+
 ![alt text](My.png "Title")
+
+=======
 
 ### Modern framework Jade/Stylus
 + For methodological front ends
 + With Web Accessibility A & AA from W3C
 + With the Usability Heuristics for User Interface Design from Jakob Nielsen
-+ With Bower and grunt Integration
++ With Bower and Grunt Integration
+=======
++ With Bower and Grunt Integration
+
 
 ---
 
@@ -170,7 +176,11 @@ My propone dos entornos de trabajo, uno de desarrollo llamado development donde 
 -....jade
 
 -production
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> 8f0ed798dcb52d8e3d4e3d20a7ae9e657813bc35
 
 
 
@@ -215,6 +225,7 @@ Los bloques y elementos buscan tener selectores únicos. Si el bloque es `.menu`
 __Ejemplo__
 
 __Jade__
+<<<<<<< HEAD
 
 ```jade
 ul.menu.menu--left.menu--blue
@@ -237,6 +248,30 @@ __Stylus__
 
 ```css
 
+=======
+
+```jade
+ul.menu.menu--left.menu--blue
+ li:a(href="#") Inicio
+ li:a(href="#") Quíenes somos
+...
+```
+
+__Html__
+
+```html
+<ul class="menu menu--left menu--blue"
+ <li><a href="#">Inicio</a>
+ <li><a href="#">Quíenes somos</a>
+ ...
+</ul>
+```
+
+__Stylus__
+
+```css
+
+>>>>>>> 8f0ed798dcb52d8e3d4e3d20a7ae9e657813bc35
 MyBlue = #1e6ce2
 
 .menu
@@ -264,6 +299,25 @@ aside
  h2.modificador
 ```
 __Stylus__
+<<<<<<< HEAD
+
+```css
+h2 {}
+h2.modificador {}
+aside {}
+```
+
+##My Estructura de archivos
+
+SMACSS define cinco categorías o archivos que apropia __My__:
+
+**Base:**
+En esta categoría se incluyen los estilos base de nuestro proyecto, incluyendo reset o el Normalize.css, tipografías y márgenes básicos de todo el sitio.
+
+__Ejemplo__
+
+__Stylus__
+=======
 
 ```css
 h2 {}
@@ -296,10 +350,30 @@ a
  &:hover
   color color2
 ```
+>>>>>>> 8f0ed798dcb52d8e3d4e3d20a7ae9e657813bc35
 
 __Css__
 ```css
+color1 = #01DFFD
+color2 = color1 * 2
 
+body
+form
+ margin 0
+ padding 0
+
+a
+ color color1
+ &:hover
+  color color2
+```
+
+<<<<<<< HEAD
+__Css__
+```css
+
+=======
+>>>>>>> 8f0ed798dcb52d8e3d4e3d20a7ae9e657813bc35
  body, form {
     margin: 0;
     padding: 0;
