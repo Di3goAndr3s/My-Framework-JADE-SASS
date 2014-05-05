@@ -34,7 +34,7 @@ Compatibilidad con las ultimas versiones de Google Chrome, Mozilla Firefox e Int
 + Posee patrones Easing mediante cubic-bezier que permiten usar transiciones CSS3 avanzadas.
 + Mixins integrados con Font-awesome para crear iconos y "social shares" de manera rapida, ya sea desde el html o desde el Css con las pseudoclases `::after` y `::before`.
 + Mixin y variables Html predifinidas mediante Jade
-+ Los componentes cumplen con el nivel de conformidad A y AA de accesibilidad web segun la w3c y la NTC5854.
++ Los componentes cumplen con el nivel de conformidad A y AA de accesibilidad web segun la W3C y la NTC5854.
 + Los componentes cumplen con las [10 reglas de usabilidad](http://www.nngroup.com/articles/ten-usability-heuristics/) web del guru de la accesibilidad Jakob Nielsen
 
 ## ¿Qué lo hace igual a otros frameworks?
@@ -143,28 +143,30 @@ My propone dos entornos de trabajo, uno de desarrollo llamado development donde 
 
 `
 -development
- -core
-   -stylus
-    -components
-     -buttons.styl
-     -forms.styl
-     -grid.styl
-      -...
-   -jade
-     -components
-      -mixins.jade
-      -variables.jade
-  -stylus
-    _main.styl
-    _base.styl
-    _layout.styl
-    _...SMACSS
-  -css
-   -main.css
-   -libs.css
-  -jade
-  -index.jade
-  -....jade
+
+-core
+-stylus
+-components
+-buttons.styl
+-forms.styl
+-grid.styl
+-...
+-jade
+-components
+-mixins.jade
+-variables.jade
+-stylus
+-main.styl
+-base.styl
+-layout.styl
+-...SMACSS
+-css
+-main.css
+-libs.css
+-jade
+-index.jade
+-....jade
+
 -production
  
 
