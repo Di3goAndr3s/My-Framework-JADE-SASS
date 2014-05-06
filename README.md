@@ -1,7 +1,5 @@
 # *My* framework
 
-=======
-
 ### Modern framework Jade/Stylus
 + For methodological front ends
 + With Web Accessibility A & AA from W3C
