@@ -35,7 +35,8 @@ Compatibilidad con las ultimas versiones de Google Chrome, Mozilla Firefox e Int
 + Posee un sistema de grilla flexible basado en el modelo de caja flexible `display flex`.
 + Posee patrones Easing mediante cubic-bezier que permiten usar transiciones CSS3 avanzadas.
 + Mixins integrados con Font-awesome para crear iconos y "social shares" de manera rapida, ya sea desde el html o desde el Css con las pseudoclases `::after` y `::before`.
-+ Mixin y variables Html predifinidas mediante Jade
++ +shapes
++ Mixin y variables Html predifinidas mediante Jade.
 + Los componentes cumplen con el nivel de conformidad A y AA de accesibilidad web segun la W3C y la NTC5854.
 + Los componentes cumplen con las [10 reglas de usabilidad](http://www.nngroup.com/articles/ten-usability-heuristics/) web del guru de la accesibilidad Jakob Nielsen
 
