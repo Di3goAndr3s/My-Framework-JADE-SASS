@@ -1,58 +1,64 @@
 # *My* framework
 
-### Modern framework Jade/Stylus
-+ For methodological front ends
-+ With Web Accessibility A & AA from W3C
-+ With the Usability Heuristics for User Interface Design from Jakob Nielsen
-+ With Bower and Grunt Integration
+### Modern framework Jade/SASS
+
++ Preprocesado en Jade y SASS
++ Compatibilidad con otros frameworks y librerias, como Compass, Bourbon, Boostrap y Foundation
++ Accesibilidad web con niveles de conformidad A y AA segun el W3C y la NTC5854
++ Diseño de interface inspirado en las heuristicas de usabilidad de Jakon Nielsen
++ Integración con Yeoman, Bower y Grunt
++ Arquitecura Css escalable, modular y orientada a objetos. Basada en OOCSS, BEM y SMACSS
++ Buenas practicas de CSS wizardry
 
 ---
 
 ![alt text](My.png "My Framework")
 
-## ¿Qué es My?
+## ¿Qué es My framework?
 
-Es un marco de trabajo Html y Css compilado en Jade y Stylus. Utilizar _My_ implica trabajar con una metodología agil y moderna que trae beneficios para el mantenimiento, escalabilidad y desarrollo de los proyectos.
+Es un marco de trabajo o framework Html y Css compilado en Jade y SASS. Utilizar _My framework_ implica trabajar con una metodología agil y moderna que trae beneficios para el mantenimiento, escalabilidad y desarrollo de los proyectos.
 
-_My_ nace de la necesidad de documentar y estandarizar un framework que permita trabajar de manera modular bajo standars internacionales.
+_My framework_ nace de la necesidad de documentar y estandarizar un framework que permita trabajar de manera modular bajo standars internacionales.
 
-## ¿Por que My?
+## ¿Por que My framework?
 
-Se llama _My_ por que se espera que quien lo use se apropie de el y lo haga suyo. Espera ser un marco de trabajo metodologico para desarrolladores front-end que esperan tener un flujo de trabajo moderno.
+Se llama _My framework_ por que se espera que quien lo use se apropie de el y lo haga suyo. Espera ser un marco de trabajo metodologico para desarrolladores front-end que esperan tener un flujo de trabajo moderno.
+
+En ese sentido, espera ser la base de marcos de trabajo personalizados por otros desarrolladores front-end que ven en _My framework_ el potencial necesario que los motive a crear sus propios frameworks.
 
 ## Compatibilidad con otros frameworks y/o extensiones
 
-Total compatibilidad con frameworks como Boostrap y Foundation, y con extensiones como Nib.
+Total compatibilidad con frameworks como Boostrap y Foundation, y con extensiones como Compass y Bourbon.
 
 ## Crossbrowsing
 
 Compatibilidad con las ultimas versiones de Google Chrome, Mozilla Firefox e Internet explorer.
 
-> Al ser un framework moderno, no se soporta en versiones de Internet explorer menor a la 10.
+## ¿Qué posee diferente a otros frameworks?
 
-## ¿Qué lo hace diferente a otros frameworks?
++ Patrones easing mediante cubic-bezier que permiten usar transiciones CSS3 avanzadas. [SASS]
++ Mixins integrados con Font-awesome para crear iconos y "social shares" de manera rapida, ya sea desde el html o desde el Css con las pseudoclases `::after` y `::before`.  [SASS y JADE]
++ Formas y figuras geometricas prediseñadas.  [SASS y JADE]
++ Mixins y variables Html predifinidos. [JADE]
++ Los componentes cumplen con el nivel de conformidad A y AA de accesibilidad web segun la W3C y la NTC5854. [SASS y JADE]
++ Los componentes cumplen con las [10 reglas de usabilidad](http://www.nngroup.com/articles/ten-usability-heuristics/)  web del guru de la accesibilidad Jakob Nielsen [SASS y JADE]
++ Sistema de archivos SMACSS
++ Nomenclatura BEM estricto y flexible
++ Snippets de propiedades CSS [SASS]
+
+## ¿Qué posee igual a otros frameworks?
 
 + Posee un sistema de grilla flexible basado en el modelo de caja flexible `display flex`.
-+ Posee patrones Easing mediante cubic-bezier que permiten usar transiciones CSS3 avanzadas.
-+ Mixins integrados con Font-awesome para crear iconos y "social shares" de manera rapida, ya sea desde el html o desde el Css con las pseudoclases `::after` y `::before`.
-+ +shapes
-+ Mixin y variables Html predifinidas mediante Jade.
-+ Los componentes cumplen con el nivel de conformidad A y AA de accesibilidad web segun la W3C y la NTC5854.
-+ Los componentes cumplen con las [10 reglas de usabilidad](http://www.nngroup.com/articles/ten-usability-heuristics/) web del guru de la accesibilidad Jakob Nielsen
-
-## ¿Qué lo hace igual a otros frameworks?
-
 + Busca generar bloques, bloques de elementos y modificadores de elementos de manera eficiente tanto en Html como en Css.
 + Tiene patrones Css que permiten hacer una arquitectura modular y escalable.
 + Busca generar buenas practicas en el codigo.
++ Arquitectura OOCSS
 
-## ¿Por que Jade y Stylus?
+## ¿Por que Jade y SASS?
 
-La respuesta es sencilla. Un código Stylus es muchísimo más sencillo de mantener, con menos horas de trabajo que significa menos costes que un CSS en bruto. Asi mismo un codigo Jade es mas rapido, limpio y eficiente que un Html neto.
+La respuesta es sencilla. Un código SASS es muchísimo más sencillo de mantener, con menos horas de trabajo que significa menos costes que un CSS en bruto. Asi mismo un codigo Jade es mas rapido, limpio y eficiente que un Html neto.
 
 Aunque tienen una curva de aprendizaje moderada, se van a encontrar con dos lenguajes de alto nivel, completos y documentados. Es cuestion de acostumbrarse a la identación y a la sintaxis.
-
-Por otro lado, _My_ busca integrarse, en un futuro, con frameworks como expressjs que suelen trabajar con Jade y Stylus.
 
 **Documentación:**
 
@@ -138,9 +144,9 @@ __Documentación:__  [Sitio oficial SMACSS](http://smacss.com/)
 
 
 ## My Stylus
-## My Jade
+## My SASS
 
-## My Estructura de archivos
+## My Estructura de archivos [SMACSS]
 
 My propone dos entornos de trabajo, uno de desarrollo llamado development donde se almacenan las carpetas y archivos con las que vamos a trabajar
 
@@ -171,17 +177,9 @@ My propone dos entornos de trabajo, uno de desarrollo llamado development donde 
 -....jade
 
 -production
-<<<<<<< HEAD
-
-=======
-
->>>>>>> 8f0ed798dcb52d8e3d4e3d20a7ae9e657813bc35
 
 
-
-
-`
-## My Nomenclatura
+## My Nomenclatura [BEM]
 
 __Bloque:__ es una entidad independiente. Puede ser visto como un objeto o un modulo. Un ejemplo es el buscador o el header.
 
@@ -215,12 +213,33 @@ Los bloques y elementos buscan tener selectores únicos. Si el bloque es `.menu`
 .bloque--modificador {}
 ```
 
-## My Metodologia
+## My Metodologia [OOCSS]
 
 __Ejemplo__
 
 __Jade__
-<<<<<<< HEAD
+
+
+```jade
+ul.menu.menu--left.menu--blue
+ li:a(href="#") Inicio
+ li:a(href="#") Quíenes somos
+...
+```
+
+__Html__
+
+```html
+<ul class="menu menu--left menu--blue">
+ <li><a href="#">Inicio</a>
+ <li><a href="#">Quíenes somos</a>
+ ...
+</ul>
+```
+
+__Stylus__
+
+```css
 
 ```jade
 ul.menu.menu--left.menu--blue
@@ -243,30 +262,6 @@ __Stylus__
 
 ```css
 
-=======
-
-```jade
-ul.menu.menu--left.menu--blue
- li:a(href="#") Inicio
- li:a(href="#") Quíenes somos
-...
-```
-
-__Html__
-
-```html
-<ul class="menu menu--left menu--blue"
- <li><a href="#">Inicio</a>
- <li><a href="#">Quíenes somos</a>
- ...
-</ul>
-```
-
-__Stylus__
-
-```css
-
->>>>>>> 8f0ed798dcb52d8e3d4e3d20a7ae9e657813bc35
 MyBlue = #1e6ce2
 
 .menu
@@ -294,7 +289,7 @@ aside
  h2.modificador
 ```
 __Stylus__
-<<<<<<< HEAD
+
 
 ```css
 h2 {}
