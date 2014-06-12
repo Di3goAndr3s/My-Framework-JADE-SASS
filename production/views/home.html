@@ -1,0 +1,68 @@
+
+<figure class="banner"><img src="./assets/img/banner.jpg" alt="">
+  <div class="overBanner"></div>
+  <div class="wrapper">
+    <div class="textBanner">{{lorem | cut:true:40:' '}}<b>{{lorem | cut:true:50:' '}}</b></div><a class="btnWhite">learn more</a>
+    <div class="w40"></div><a class="btnBlue">register here</a>
+  </div>
+  <div class="bulletNav"><a title="Banner" class="active"></a><a title="Mapa"></a><a title="RSS"></a></div>
+</figure>
+<section class="map">
+  <div class="wrapper">
+    <h2>Find Projects<b>on the Map</b></h2>
+  </div>
+  <div id="map"></div>
+</section>
+<div class="wrapper">
+  <section class="rss"></section>
+  <aside class="twitter"></aside>
+</div>
+<section class="contentBottom">
+  <div class="wrapper">
+    <p>{{lorem | cut:true:100:' '}}</p><a class="btnYellow">Contact Us</a>
+  </div>
+</section>
+<script>
+  $('#map').gmap3({
+    map: {
+      options: {
+      center: {lat: 4.659634, lng: -74.062035},
+      zoom: 1,
+      mapTypeControlOptions: {
+      mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'style1']
+      }
+      }
+      },
+      styledmaptype:{
+      id: "style1",
+      options:{
+      name: "Blue Map"
+      },
+      callback: function(){
+      $(this).gmap3("get").setMapTypeId('style1');
+      },
+      styles: [
+      {
+      stylers: [
+      { lightness: 1 },
+      { saturation: -48 },
+      { hue: "#06a1fe"}
+      ]
+      }
+      ]
+      },
+      });
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+</script>

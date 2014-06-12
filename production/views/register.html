@@ -1,0 +1,374 @@
+
+<section class="wrapper register">
+  <h1>register</h1>
+  <div class="descriptionBox">
+    <p>{{lorem | cut:true:480:' '}}</p>
+  </div>
+  <div class="accordion">
+    <h2>Security Agency</h2>
+    <article>
+      <p>{{lorem | cut:true:480:' '}}</p>
+      <p>{{lorem | cut:true:480:' '}}</p><a class="scrollClick1"></a><a class="btnYellow">Belong</a>
+      <div class="formBelong">
+        <h3 id="scrollDown1">{{lorem | cut:true:80:' '}}</h3>
+        <p>{{lorem | cut:true:480:' '}}</p>
+        <form role="form">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>First name</label>
+                <input placeholder="First name" type="text" class="form-control"/>
+              </div>
+              <div class="form-group">
+                <label>Organization name</label>
+                <input placeholder="Organization name" type="text" class="form-control"/>
+              </div>
+              <div class="form-group">
+                <label>Position</label>
+                <input placeholder="Position" type="text" class="form-control"/>
+              </div>
+              <div class="form-group">
+                <label>Web site</label>
+                <input placeholder="Web site" type="text" class="form-control"/>
+              </div>
+              <div class="form-group">
+                <label>Zip code</label>
+                <input placeholder="Zip code" type="text" class="form-control"/>
+              </div>
+              <div class="form-group">
+                <label>Add photo/logo</label>
+                <input type="file" class="form-control"/><small>{{lorem | cut:true:40:' '}}</small>
+              </div>
+              <div class="form-group">
+                <label>Password</label>
+                <input placeholder="Password" type="password" class="form-control"/>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Surname</label>
+                <input placeholder="Surname" type="text" class="form-control"/>
+              </div>
+              <div class="form-group">
+                <label>E-mail</label><span>*</span>
+                <input placeholder="E-mail" type="text" class="form-control"/>
+              </div>
+              <div class="form-group">
+                <label>Telephone</label>
+                <input placeholder="Telephone" type="text" class="form-control"/>
+              </div>
+              <div class="form-group">
+                <label>Twitter</label>
+                <input placeholder="Twitter" type="text" style="margin: 0 0 9rem" class="form-control"/>
+              </div>
+              <div class="form-group">
+                <label>Add documents</label>
+                <input type="file" class="form-control"/><small>{{lorem | cut:true:40:' '}}</small>
+              </div>
+              <div class="form-group">
+                <label>Confirm password</label>
+                <input placeholder="Password" type="Confirm password" class="form-control"/>
+              </div>
+            </div>
+          </div>
+          <button type="button" ng-click="enableModal()" class="btnYellow">Register</button>
+          <div ng-show="showConfirm" class="showConfirm">
+            <div class="alert alert-success">{{lorem | cut:true:40:' '}} <b>{{lorem | cut:true:40:' '}}</b> {{lorem | cut:true:40:' '}}<i class="fa fa-thumbs-o-up"></i></div>
+          </div>
+        </form>
+      </div>
+    </article>
+    <h2>Security Supplier</h2>
+    <article>
+      <p>{{lorem | cut:true:480:' '}}</p>
+      <p>{{lorem | cut:true:480:' '}}</p><a class="scrollClick2"></a><a class="btnYellow">Belong</a>
+      <div class="formBelong">
+        <h3 id="scrollDown2">{{lorem | cut:true:80:' '}}</h3>
+        <p>{{lorem | cut:true:480:' '}}</p>
+        <form role="form">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>First name</label>
+                <input placeholder="First name" type="text" class="form-control"/>
+              </div>
+              <div class="form-group">
+                <label>Organization name</label>
+                <input placeholder="Organization name" type="text" class="form-control"/>
+              </div>
+              <div class="form-group">
+                <label>Position</label>
+                <input placeholder="Position" type="text" class="form-control"/>
+              </div>
+              <div class="form-group">
+                <label>Web site</label>
+                <input placeholder="Web site" type="text" class="form-control"/>
+              </div>
+              <div class="form-group">
+                <label>Zip code</label>
+                <input placeholder="Zip code" type="text" class="form-control"/>
+              </div>
+              <div class="form-group">
+                <label>Add photo/logo</label>
+                <input type="file" class="form-control"/><small>{{lorem | cut:true:40:' '}}</small>
+              </div>
+              <div class="form-group">
+                <label>Password</label>
+                <input placeholder="Password" type="password" class="form-control"/>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Surname</label>
+                <input placeholder="Surname" type="text" class="form-control"/>
+              </div>
+              <div class="form-group">
+                <label>E-mail</label><span>*</span>
+                <input placeholder="E-mail" type="text" class="form-control"/>
+              </div>
+              <div class="form-group">
+                <label>Telephone</label>
+                <input placeholder="Telephone" type="text" class="form-control"/>
+              </div>
+              <div class="form-group">
+                <label>Twitter</label>
+                <input placeholder="Twitter" type="text" style="margin: 0 0 9rem" class="form-control"/>
+              </div>
+              <div class="form-group">
+                <label>Add documents</label>
+                <input type="file" class="form-control"/><small>{{lorem | cut:true:40:' '}}</small>
+              </div>
+              <div class="form-group">
+                <label>Confirm password</label>
+                <input placeholder="Password" type="Confirm password" class="form-control"/>
+              </div>
+            </div>
+          </div>
+          <button type="button" ng-click="enableModal()" class="btnYellow">Register</button>
+          <div ng-show="showConfirm" class="showConfirm">
+            <div class="alert alert-success">{{lorem | cut:true:40:' '}} <b>{{lorem | cut:true:40:' '}}</b> {{lorem | cut:true:40:' '}}<i class="fa fa-thumbs-o-up"></i></div>
+          </div>
+        </form>
+      </div>
+    </article>
+    <h2>Security Supplier</h2>
+    <article>
+      <p>{{lorem | cut:true:480:' '}}</p>
+      <p>{{lorem | cut:true:480:' '}}</p><a class="scrollClick3"></a><a class="btnYellow">Belong</a>
+      <div class="formBelong">
+        <h3 id="scrollDown3">{{lorem | cut:true:80:' '}}</h3>
+        <p>{{lorem | cut:true:480:' '}}</p>
+        <form role="form">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>First name</label>
+                <input placeholder="First name" type="text" class="form-control"/>
+              </div>
+              <div class="form-group">
+                <label>Organization name</label>
+                <input placeholder="Organization name" type="text" class="form-control"/>
+              </div>
+              <div class="form-group">
+                <label>Position</label>
+                <input placeholder="Position" type="text" class="form-control"/>
+              </div>
+              <div class="form-group">
+                <label>Web site</label>
+                <input placeholder="Web site" type="text" class="form-control"/>
+              </div>
+              <div class="form-group">
+                <label>Zip code</label>
+                <input placeholder="Zip code" type="text" class="form-control"/>
+              </div>
+              <div class="form-group">
+                <label>Add photo/logo</label>
+                <input type="file" class="form-control"/><small>{{lorem | cut:true:40:' '}}</small>
+              </div>
+              <div class="form-group">
+                <label>Password</label>
+                <input placeholder="Password" type="password" class="form-control"/>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Surname</label>
+                <input placeholder="Surname" type="text" class="form-control"/>
+              </div>
+              <div class="form-group">
+                <label>E-mail</label><span>*</span>
+                <input placeholder="E-mail" type="text" class="form-control"/>
+              </div>
+              <div class="form-group">
+                <label>Telephone</label>
+                <input placeholder="Telephone" type="text" class="form-control"/>
+              </div>
+              <div class="form-group">
+                <label>Twitter</label>
+                <input placeholder="Twitter" type="text" style="margin: 0 0 9rem" class="form-control"/>
+              </div>
+              <div class="form-group">
+                <label>Add documents</label>
+                <input type="file" class="form-control"/><small>{{lorem | cut:true:40:' '}}</small>
+              </div>
+              <div class="form-group">
+                <label>Confirm password</label>
+                <input placeholder="Password" type="Confirm password" class="form-control"/>
+              </div>
+            </div>
+          </div>
+          <button type="button" ng-click="enableModal()" class="btnYellow">Register</button>
+          <div ng-show="showConfirm" class="showConfirm">
+            <div class="alert alert-success">{{lorem | cut:true:40:' '}} <b>{{lorem | cut:true:40:' '}}</b> {{lorem | cut:true:40:' '}}<i class="fa fa-thumbs-o-up"></i></div>
+          </div>
+        </form>
+      </div>
+    </article>
+    <h2>Security Supplier</h2>
+    <article>
+      <p>{{lorem | cut:true:480:' '}}</p>
+      <p>{{lorem | cut:true:480:' '}}</p><a class="scrollClick4"></a><a class="btnYellow">Belong</a>
+      <div class="formBelong">
+        <h3 id="scrollDown4">{{lorem | cut:true:80:' '}}</h3>
+        <p>{{lorem | cut:true:480:' '}}</p>
+        <form role="form">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>First name</label>
+                <input placeholder="First name" type="text" class="form-control"/>
+              </div>
+              <div class="form-group">
+                <label>Organization name</label>
+                <input placeholder="Organization name" type="text" class="form-control"/>
+              </div>
+              <div class="form-group">
+                <label>Position</label>
+                <input placeholder="Position" type="text" class="form-control"/>
+              </div>
+              <div class="form-group">
+                <label>Web site</label>
+                <input placeholder="Web site" type="text" class="form-control"/>
+              </div>
+              <div class="form-group">
+                <label>Zip code</label>
+                <input placeholder="Zip code" type="text" class="form-control"/>
+              </div>
+              <div class="form-group">
+                <label>Add photo/logo</label>
+                <input type="file" class="form-control"/><small>{{lorem | cut:true:40:' '}}</small>
+              </div>
+              <div class="form-group">
+                <label>Password</label>
+                <input placeholder="Password" type="password" class="form-control"/>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Surname</label>
+                <input placeholder="Surname" type="text" class="form-control"/>
+              </div>
+              <div class="form-group">
+                <label>E-mail</label><span>*</span>
+                <input placeholder="E-mail" type="text" class="form-control"/>
+              </div>
+              <div class="form-group">
+                <label>Telephone</label>
+                <input placeholder="Telephone" type="text" class="form-control"/>
+              </div>
+              <div class="form-group">
+                <label>Twitter</label>
+                <input placeholder="Twitter" type="text" style="margin: 0 0 9rem" class="form-control"/>
+              </div>
+              <div class="form-group">
+                <label>Add documents</label>
+                <input type="file" class="form-control"/><small>{{lorem | cut:true:40:' '}}</small>
+              </div>
+              <div class="form-group">
+                <label>Confirm password</label>
+                <input placeholder="Password" type="Confirm password" class="form-control"/>
+              </div>
+            </div>
+          </div>
+          <button type="button" ng-click="enableModal()" class="btnYellow">Register</button>
+          <div ng-show="showConfirm" class="showConfirm">
+            <div class="alert alert-success">{{lorem | cut:true:40:' '}} <b>{{lorem | cut:true:40:' '}}</b> {{lorem | cut:true:40:' '}}<i class="fa fa-thumbs-o-up"></i></div>
+          </div>
+        </form>
+      </div>
+    </article>
+    <h2>Security Supplier</h2>
+    <article>
+      <p>{{lorem | cut:true:480:' '}}</p>
+      <p>{{lorem | cut:true:480:' '}}</p><a class="scrollClick5"></a><a class="btnYellow">Belong</a>
+      <div class="formBelong">
+        <h3 id="scrollDown5">{{lorem | cut:true:80:' '}}</h3>
+        <p>{{lorem | cut:true:480:' '}}</p>
+        <form role="form">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>First name</label>
+                <input placeholder="First name" type="text" class="form-control"/>
+              </div>
+              <div class="form-group">
+                <label>Organization name</label>
+                <input placeholder="Organization name" type="text" class="form-control"/>
+              </div>
+              <div class="form-group">
+                <label>Position</label>
+                <input placeholder="Position" type="text" class="form-control"/>
+              </div>
+              <div class="form-group">
+                <label>Web site</label>
+                <input placeholder="Web site" type="text" class="form-control"/>
+              </div>
+              <div class="form-group">
+                <label>Zip code</label>
+                <input placeholder="Zip code" type="text" class="form-control"/>
+              </div>
+              <div class="form-group">
+                <label>Add photo/logo</label>
+                <input type="file" class="form-control"/><small>{{lorem | cut:true:40:' '}}</small>
+              </div>
+              <div class="form-group">
+                <label>Password</label>
+                <input placeholder="Password" type="password" class="form-control"/>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Surname</label>
+                <input placeholder="Surname" type="text" class="form-control"/>
+              </div>
+              <div class="form-group">
+                <label>E-mail</label><span>*</span>
+                <input placeholder="E-mail" type="text" class="form-control"/>
+              </div>
+              <div class="form-group">
+                <label>Telephone</label>
+                <input placeholder="Telephone" type="text" class="form-control"/>
+              </div>
+              <div class="form-group">
+                <label>Twitter</label>
+                <input placeholder="Twitter" type="text" style="margin: 0 0 9rem" class="form-control"/>
+              </div>
+              <div class="form-group">
+                <label>Add documents</label>
+                <input type="file" class="form-control"/><small>{{lorem | cut:true:40:' '}}</small>
+              </div>
+              <div class="form-group">
+                <label>Confirm password</label>
+                <input placeholder="Password" type="Confirm password" class="form-control"/>
+              </div>
+            </div>
+          </div>
+          <button type="button" ng-click="enableModal()" class="btnYellow">Register</button>
+          <div ng-show="showConfirm" class="showConfirm">
+            <div class="alert alert-success">{{lorem | cut:true:40:' '}} <b>{{lorem | cut:true:40:' '}}</b> {{lorem | cut:true:40:' '}}<i class="fa fa-thumbs-o-up"></i></div>
+          </div>
+        </form>
+      </div>
+    </article>
+  </div>
+</section>

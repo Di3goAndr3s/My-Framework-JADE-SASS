@@ -1,6 +1,23 @@
 "use strict";
 module.exports = function (grunt) {
   grunt.initConfig({
+
+//    project: {
+//  app: 'app',
+//  assets: '<%= project.app %>/assets',
+//  src: '<%= project.assets %>/src',
+//  css: [
+//    '<%= project.src %>/scss/style.scss'
+//  ],
+//  js: [
+//    '<%= project.src %>/js/*.js'
+//  ]
+//},
+
+
+
+
+
     project: {
       javascript: {
         main: ['development/js/main.js'],
@@ -52,15 +69,6 @@ module.exports = function (grunt) {
         },
         files: {
           "production/index.html": ["development/jade/index.jade"],
-          "production/views/home.html": ["development/jade/home.jade"],
-          "production/views/aboutus.html": ["development/jade/aboutus.jade"],
-          "production/views/ourservices.html": ["development/jade/ourservices.jade"],
-          "production/views/register.html": ["development/jade/register.jade"],
-          "production/views/vacancylist.html": ["development/jade/vacancylist.jade"],
-          "production/views/agencyprofile.html": ["development/jade/agencyprofile.jade"],
-          "production/views/directories.html": ["development/jade/directories.jade"],
-          "production/views/blog.html": ["development/jade/blog.jade"],
-          "production/views/calendar.html": ["development/jade/calendar.jade"]
         }
       }
     },
@@ -134,6 +142,39 @@ module.exports = function (grunt) {
         }
       }
     },
+       sass: {
+    dist: {
+      files: {
+        'production/css/main.css': 'development/sass/main.sass',
+
+      }
+    }
+  },
+//      sass: {                                 // task
+//        dist: {                             // target
+//            files: {                        // dictionary of files
+//                'main.css': 'main.scss'     // 'destination': 'source'
+//            }
+//        },
+//        dev: {                              // another target
+//            options: {                      // dictionary of render options
+//                sourceMap: true
+//            },
+//            files: {
+//                'main.css': 'main.scss'
+//            }
+//        }
+//    },
+        compass: {                  // Task
+    dist: {                   // Target
+      options: {              // Target options
+        sassDir: 'development/sass/',
+        cssDir: 'production/css/',
+        environment: 'production',
+
+      }
+    }
+  },
     autoprefixer: {
       options: {
         browsers: ['last 2 version', 'ie 8', 'ie 9']
@@ -298,10 +339,24 @@ module.exports = function (grunt) {
   //    grunt.loadNpmTasks('grunt-contrib-htmlmin');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-concat-css');
+    grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-contrib-compass');
+//    grunt.loadNpmTasks('grunt-sass');
 
   grunt.registerTask('default', ['stylus', 'autoprefixer', 'cssmin', 'concat_css', 'jade', 'concat', 'compress', 'connect', 'concurrent', 'notify']);
   grunt.registerTask('production', ['stylus', 'cssmin', 'concat_css', 'jade', 'concat', 'compress', 'autoprefixer', 'connect', 'concurrent']);
   grunt.registerTask('dev', ['stylus', 'cssmin', 'jade', 'concat_css', 'concat', 'autoprefixer', 'connect', 'concurrent']);
 
 
+//TAREAS / TASKS
+grunt.registerTask('html', ['jade']);
+grunt.registerTask('server', ['connect']);
+grunt.registerTask('test1', ['sass']);
+grunt.registerTask('test2', ['compass']);
+//grunt.registerTask('css', ['sass']);
 };
+
+
+
+
+

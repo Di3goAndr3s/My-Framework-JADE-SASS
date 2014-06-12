@@ -502,5 +502,8 @@ __Css__
 
 ###Grunt
 
+Requisitos: node.js
+Primer paso: npm install
+
 ###Yeoman (PROXIMAMENTE)
 

@@ -78,7 +78,6 @@ input[type="file"] {
 input[type="file"]:focus {
   border-color: #66afe9;
   outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(102,175,233,0.6);
   box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(102,175,233,0.6);
 }
 .b1 {
@@ -140,6 +139,7 @@ body {
 a {
   text-decoration: none;
   display: block;
+  -webkit-transition: all cubic-bezier(0.94, 0.94, 0.04, 0.98) 0.5s;
   transition: all cubic-bezier(0.94, 0.94, 0.04, 0.98) 0.5s;
   cursor: pointer;
 }
@@ -355,6 +355,7 @@ figure.banner {
   padding: 0;
 }
 figure.banner img {
+  -webkit-filter: blur(0.3rem);
   filter: blur(0.3rem);
   margin: 0;
   padding: 0;
@@ -453,6 +454,7 @@ a.btnBlue:hover {
   text-decoration: none;
 }
 a.btnBlue:hover {
+  -webkit-transform: rotateX(360deg);
   transform: rotateX(360deg);
   border: 0.2rem solid #125480;
   background: #125480;
@@ -491,6 +493,8 @@ figure.banner::before {
   bottom: 0;
   left: 50%;
   z-index: 9999;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   margin: 0 0 -2.5rem -2rem;
 }
@@ -531,8 +535,7 @@ div.bulletNav a.active {
 }
 section.map {
   position: relative;
-  margin: 2rem 0 0;
-  border: 1px solid red;
+  margin: 8rem 0 0;
 }
 section.map h2 {
   color: #717a85;
@@ -543,7 +546,6 @@ section.map h2 {
   font-family: brandon_grotesquelight;
   text-align: center;
 }
-
 section.rss {
   display: inline-block;
   vertical-align: middle;
@@ -580,6 +582,7 @@ section.contentBottom a {
 .aboutus article {
   padding: 1rem 1rem 2rem;
   margin: 4rem 0 0;
+  background-image: -webkit-linear-gradient(top, #fff, #fff);
   background-image: linear-gradient(top, #fff, #fff);
   border-bottom: thin dotted #717a85;
 }
@@ -602,6 +605,7 @@ section.contentBottom a {
 .ourservices article {
   padding: 1rem 1rem 3rem;
   margin: 4rem 0 0;
+  background-image: -webkit-linear-gradient(top, #fff, #fffff1);
   background-image: linear-gradient(top, #fff, #fffff1);
   position: relative;
 }
@@ -614,6 +618,8 @@ section.contentBottom a {
   bottom: 0;
   left: 50%;
   z-index: 9999;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   margin: 0 0 -0.5rem -0.5rem;
 }
@@ -651,6 +657,8 @@ section.contentBottom a {
   top: 0;
   left: 50%;
   z-index: 9999;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   margin: -1rem 0 0 -1rem;
   background: #fff;
@@ -660,6 +668,7 @@ section.contentBottom a {
 }
 .register div.accordion h2 {
   cursor: pointer;
+  -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
   transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
   z-index: 9999;
   color: #fff;
@@ -676,6 +685,7 @@ section.contentBottom a {
 .register div.accordion article {
   border-bottom: thin dotted #717a85;
   height: 0;
+  -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
   transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .register div.accordion article p {
@@ -702,6 +712,8 @@ section.contentBottom a {
   padding: 0 0 0 3.5rem !important;
 }
 .activeAccordion::before {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 .register h2::before {
@@ -767,16 +779,16 @@ div.showConfirm i {
 }
 .directories div.columns {
   display: -webkit-box;
-  display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
 }
 .directories div.columns article {
   -webkit-flex-flow: row wrap;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
   display: -webkit-box;
-  display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
@@ -820,6 +832,7 @@ div.showConfirm i {
   text-align: center;
 }
 .directories div.columns article a.over span:hover {
+  -webkit-transform: rotateX(360deg);
   transform: rotateX(360deg);
 }
 .directories div.columns article a.over span i {
@@ -882,6 +895,7 @@ a.editable-click {
   line-height: 100%;
   font-weight: normal;
   font-family: brandon_grotesquelight;
+  -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
   transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
   cursor: pointer;
 }
@@ -920,7 +934,6 @@ input.editable-input {
 input.editable-input:focus {
   border-color: #66afe9;
   outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(102,175,233,0.6);
   box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(102,175,233,0.6);
 }
 textarea.editable-input {
@@ -946,7 +959,6 @@ textarea.editable-input {
 textarea.editable-input:focus {
   border-color: #66afe9;
   outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(102,175,233,0.6);
   box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(102,175,233,0.6);
 }
 .editable-wrap .editable-buttons button {
@@ -1022,16 +1034,16 @@ textarea.editable-input:focus {
 }
 .vacancyList div.columns {
   display: -webkit-box;
-  display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
 }
 .vacancyList div.columns article {
   -webkit-flex-flow: row wrap;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
   display: -webkit-box;
-  display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
@@ -1116,7 +1128,6 @@ form.formBox input {
 form.formBox input:focus {
   border-color: #66afe9;
   outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(102,175,233,0.6);
   box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(102,175,233,0.6);
 }
 form.formBox small {
@@ -1133,6 +1144,7 @@ form.formBox button {
   font-size: 1.2rem;
   line-height: 100%;
   font-weight: normal;
+  -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
   transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 form.formBox button i {
@@ -1169,7 +1181,6 @@ form.formDate input {
 form.formDate input:focus {
   border-color: #66afe9;
   outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(102,175,233,0.6);
   box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(102,175,233,0.6);
 }
 form.formDate small {
@@ -1186,6 +1197,7 @@ form.formDate button {
   font-size: 1.2rem;
   line-height: 100%;
   font-weight: normal;
+  -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
   transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 form.formDate button i {
@@ -1265,6 +1277,7 @@ form.formDate button i {
   border-radius: 10%;
   text-align: center;
   margin: 0.4rem 0.5rem 0 0;
+  -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
   transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .blogContent a.twitter i,
@@ -1276,6 +1289,8 @@ form.formDate button i {
 }
 .blogContent a.twitter:hover,
 .blogContent a.facebook:hover {
+  -webkit-transform: translate(0rem, -0.1rem);
+  -ms-transform: translate(0rem, -0.1rem);
   transform: translate(0rem, -0.1rem);
 }
 .blogCommentslist {
@@ -1332,6 +1347,7 @@ form.blogComments textarea {
   min-height: 20rem;
   overflow-x: hidden;
   border-bottom: 0.2rem solid #b8bcc2;
+  -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
   transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
   resize: none;
 }
@@ -1346,6 +1362,7 @@ form.blogComments button {
   line-height: 4rem;
   font-weight: normal;
   padding: 0;
+  -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
   transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 form.blogComments small {
@@ -1389,6 +1406,8 @@ form.blogComments::after {
   top: 6rem;
   left: 27rem;
   z-index: 9999;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 .tags {
@@ -1427,6 +1446,7 @@ form.blogComments::after {
 }
 .calendarEvents h2 {
   cursor: pointer;
+  -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
   transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
   z-index: 9999;
   color: #fff;
@@ -1443,6 +1463,7 @@ form.blogComments::after {
 .calendarEvents article {
   border-bottom: thin dotted #717a85;
   height: 0;
+  -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
   transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .calendarEvents article p {
@@ -1500,7 +1521,6 @@ form.blogComments::after {
 .profileTabs #content3,
 .profileTabs #content4 {
   display: -webkit-box;
-  display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
@@ -1510,9 +1530,10 @@ form.blogComments::after {
 .profileTabs #content3 div,
 .profileTabs #content4 div {
   -webkit-flex-flow: row wrap;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
   display: -webkit-box;
-  display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
@@ -1523,9 +1544,9 @@ form.blogComments::after {
 .profileTabs #content4 div:nth-of-type(2) {
   margin: 0 2rem;
 }
-
-#map {
+.marco-mapa {
   height: 46.5rem;
-  margin: 2rem auto 0;
+  margin: 6rem auto 0;
   width: 100%;
+  border: 0.1rem solid #f00;
 }

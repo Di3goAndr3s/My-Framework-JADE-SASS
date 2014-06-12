@@ -1,0 +1,399 @@
+//FONTS
+
+=font
+    font-family: 'PT Sans', sans-serif
+
+=fontCursive
+    font-family: 'Rancho', cursive
+
+=fontSerif
+    font-family: 'Oswald', sans-serif
+
+=legible
+    text-rendering: optimizelegibility
+
+//BREAKPOINTS
+
+=mobil($viewportMax:480)
+    @media screen and (max-width: $viewportMax+px)
+        @content
+
+=tablet($viewportMin:480, $viewportMax:1024)
+    @media screen and (min-width: $viewportMin+px) and (max-width: $viewportMax+px)
+        @content
+
+=ipad($viewportMin:768, $viewportMax:1024)
+    @media screen and (min-width: $viewportMin+px) and (max-width: $viewportMax+px)
+        @content
+
+=fluid($viewportMax:1024)
+    @media screen and (max-width: $viewportMax+px)
+        @content
+
+=desk($viewportMin:1024, $viewportMax:1280)
+    @media screen and (min-width: $viewportMin+px) and (max-width: $viewportMax+px)
+        @content
+
+=mq($viewportMax)
+    @media screen and (max-width: $viewportMax+px)
+        @content
+
+
+
+//PSEUDOCLASS
+=hover
+    &:hover
+        @content
+
+=focus
+    &:focus
+        @content
+
+=after
+    &::after
+        @content
+
+=before
+    &::before
+        @content
+
+//PSEUDOSELECTORS
+
+=last
+    &:nth-last-child
+        @content
+
+=nth1
+    &:nth-of-type(1)
+        @content
+
+=nth2
+    &:nth-of-type(2)
+        @content
+
+=odd
+    &:nth-of-type(odd)
+        @content
+
+=even
+    &:nth-of-type(even)
+        @content
+
+=content($content: ':)')
+    content: $content
+
+//FIXES
+
+=transparent
+    background: rgba(0, 0, 0, 0)
+
+=borderFix
+    border: .1rem solid rgba(0, 0, 0, 0)
+
+=cero
+    margin: 0
+    padding: 0
+
+
+=reset
+    margin: 0
+    padding: 0
+    text-decoration: none
+    border: none
+    outline: none
+    list-style: none
+
+=box-sizing
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+=p0
+    padding: 0
+
+=m0
+    margin: 0
+//RESETS
+
+=noFloat
+    float: none
+
+=noList
+    list-style-image: none !important
+    list-style-type: none !important
+    list-style: none !important
+
+=noDeco
+    text-decoration: none
+
+=noUnder
+    text-decoration: none
+
+=noAppearance
+    border: none
+    box-shadow: none
+
+=noBorder
+    border: none
+
+=noScroll
+    overflow: hidden
+
+=noText($indent: -999)
+    text-indent: $indent+rem
+    overflow: hidden
+
+=noFlex
+    flex: none
+
+//SIZES
+
+=s100
+    +w100
+    +h100
+
+=w100
+    width: 100%
+
+=h100
+    height: 100%
+
+=hv
+    width: 100vh
+    height: 100vh
+
+=maxh($maxheight)
+    max-height: $maxheight+rem
+
+=maxw($maxwidth)
+    max-width: $maxwidth+rem
+
+=minh($minheight)
+    min-height: $minheight+rem
+
+=minw($minwidth)
+    min-width: $minwidth+rem
+
+=hauto
+    height: auto
+
+=wauto
+    width: auto
+
+
+//POSITIONS
+
+
+=fixed
+    position: fixed
+
+=absolute ($top:auto,$left:auto,$bottom:auto, $right:auto)
+    top: $top
+    right: $right
+    bottom: $bottom
+    left: $left
+    position: absolute
+
+=relative
+    position: relative
+
+//HELPERS
+
+=b1
+    border: .1rem solid darkred
+
+=b2
+    border: .1rem solid navy
+
+=b3
+    border: .1rem solid lime
+
+=b4
+    border: .1rem solid chocolate
+
+=b5
+    border: .1rem solid violet
+
+//SNIPPETS
+
+=mt($margin-top)
+    margin-top: $margin-top
+
+=ml($margin-left)
+    margin-left: $margin-left
+
+=mr($margin-right)
+    margin-right: $margin-right
+
+=mb($margin-bottom)
+    margin-bottom: $margin-bottom
+
+=clear
+    clear: both
+
+=none
+    display: none
+
+=hidden
+    visibility: hidden
+
+=centered($center1: 0, $center2: 0)
+    margin: $center1 auto $center2
+
+=auto
+    margin: auto
+
+=lh($lineHeight: 100%)
+    line-height: $lineHeight
+
+=inline
+    display: inline
+
+=inline-block($vertical-align: top)
+    display: inline-block
+    vertical-align: $vertical-align
+    white-space: normal
+
+
+=fs($font-size: 1.4, $line-height: 100%, $font-weight: normal)
+    font-size: $font-size+rem
+    line-height: $line-height
+    font-weight: $font-weight
+
+=ma($margin1: 0, $margin2: 0, $margin3: 0, $margin4: 0)
+    margin: $margin1+rem $margin2+rem $margin3+rem $margin4+rem
+
+=pa($padding1,$padding2,$padding3,$padding4)
+    padding: $padding1+rem $padding2+rem $padding3+rem $padding4+rem
+
+
+=uppercase
+    text-transform: uppercase
+
+=upper
+    text-transform: uppercase
+
+=left
+    float: left
+
+=right
+    float: right
+
+=under
+    text-decoration: underline
+
+=tCenter
+    text-align: center
+
+=tLeft
+    text-align: left
+
+=tRight
+    text-align: right
+
+=ls($letter: 0px)
+    letter-spacing: $letter
+
+
+
+=ti($indent: -999)
+    text-indent: $indent+rem
+
+=fw($weight)
+    font-weight: $weight
+
+
+
+=z($index)
+    z-index: $index
+
+=block
+    display: block
+
+=pointer
+    cursor: pointer
+
+//COLORS
+
+=bg($background)
+    background: $background
+
+=co($color: red)
+    color: $color
+
+=gray()
+    color: $gray
+
+=white()
+    color: white
+
+=bgWhite($opacity:1)
+    background: rgba(255,255,255,$opacity)
+
+=bgBlack($opacity:1)
+    background: rgba(0,0,0,$opacity)
+
+=white
+    color: white
+
+=gradient($direction,$from, $value1,$to, $value2)
+    background-color: $from
+    background-image: linear-gradient($direction, $from $value1, $to $value2)
+    background-image: -webkit-linear-gradient($direction, $from $value1, $to $value2)
+//    background-image: url('../img/bg_hexagono.png'), linear-gradient(left, $bg-brown_light 0%, $bg-brown_dark 100%)
+=gradientHeader
+    background: $bg-brown_light
+    background-image: url('../img/bg_hexagono.png')
+    @include background-image(url('../img/bg_hexagono.png'), linear-gradient(left, $bg-brown_light 30%, $bg-gray 70%))
+
+
+//CSS3
+
+=transition($speed: 600ms)
+    transition: all $speed cubic-bezier(0.25, 0.46, 0.45, 0.94)
+
+
+=rotate($rotate: 45)
+    transform: rotate($rotate+deg)
+
+
+=br($radius)
+    border-radius: $radius
+
+=opa($opa: .5)
+    opacity: $opa
+
+
+//GRID
+
+=box
+    display: flex
+    flex-flow: row wrap
+
+=column
+    display: flex
+    flex-flow: column nowrap
+
+=align($align-item: flex-start)
+    align-items: $align-item
+
+=flex($flex: 1)
+    flex: $flex
+
+=item($align-self: auto)
+    align-self: $align-self
+
+=space($value:space-between)
+    justify-content: $value
+
+
+
+
+
+
+//CONTAINER
+
+=page
+    +relative
+    width: 1024px
+    +centered

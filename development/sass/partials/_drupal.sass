@@ -1,0 +1,144 @@
+#first-time
+    @extend %none
+    +b1
+
+.sistema
+    position: fixed
+    right: 0
+    top: 15%
+    +font
+    +z(9999)
+
+.hide
+    @extend %none
+
+li.expanded,
+li.leaf
+    +noList
+    +pointer
+
+
+ul.primary
+    +size(60px 140px)
+    line-height: normal
+    list-style: none
+    +cero
+    +noBorder
+
+
+ul.primary li
+    +left
+    margin: 0 0 5px
+
+
+ul.primary li a
+    +block
+    +size(60px)
+    +br(100%)
+    +bg($cake)
+    +tCenter
+    +co(white)
+    +fontSerif
+    +transition
+    +fs(1.4, 60px, normal)
+
+
+ul.primary li.active a
+    +block
+    +size(60px)
+    +br(100%)
+    +bg($cake)
+    +tCenter
+    +co(white)
+    +fontSerif
+    +transition
+    +fs(1.4, 60px, normal)
+
+
+ul.primary li a:hover
+    +bg($cake-dark)
+    +co(white)
+
+
+ul.secondary
+    border-bottom: 1px solid #bbb
+    padding: 0.5em 1em
+    margin: 5px
+
+ul.secondary li
+    border-right: 1px solid #ccc
+    display: inline
+    padding: 0 1em
+
+ul.secondary a
+    padding: 0
+    text-decoration: none
+
+ul.secondary a.active
+    border-bottom: 4px solid #999
+
+.page-user #user-login
+    width: 320px
+    +centered
+    label
+        +fontSerif
+        +fs(1.6, 100%, normal)
+        margin: 0 0 10px
+    input[type='text'],
+    input[type='password']
+        width: 100%
+        height: 35px
+        border: thin solid $cake-dark
+        +fs(1.4, 100%, normal)
+        padding: 5px
+        +fontSerif
+        +gray
+        &:focus
+            border: thin solid red
+            +bg(white)
+    .description
+        @extend %none
+    input[type='submit']
+        width: 100px
+        height: 35px
+        +bg($orange)
+        +co(white)
+        +right
+        +noBorder
+        +transition
+        +fs(1.4, 100%, normal)
+        +fontSerif
+        +hover
+            +bg($cake-dark)
+            +co(white)
+
+.page-user .sistema
+    @extend %none
+
+.admin-sistema
+    margin: -10px 5px 0 0
+    a
+        +block
+        +size(60px)
+        +br(100%)
+        +bg($cake)
+        +tCenter
+        +co(white)
+        +fontSerif
+        +transition
+        +fs(1.4, 60px, normal)
+        +hover
+            +bg($cake-dark)
+            +co(white)
+
+.messages
+    @extend %none
+
+
+
+
+
+
+
+
+

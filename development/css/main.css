@@ -1,0 +1,264 @@
+@charset "UTF-8";
+
+
+#first-time,
+.hide,
+.page-user #user-login .description,
+.page-user .sistema,
+.messages {
+  display: none;
+}
+
+/*#CONTENIDO */
+
+/*#CONTENIDO...........Lo estás leyendo */
+
+/*#RESET...............Establece los valores iniciales */
+
+/*#FONT-FACE...........Importamos fuentes de iconos y font-face */
+
+/*#HOME................Estilos del home */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+*:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  text-rendering: optimizelegibility;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  margin: 0 0 10px;
+}
+
+p:nth-last-child {
+  margin: 0;
+}
+
+a {
+  color: #0060aa;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+}
+
+a:focus {
+  color: #454545;
+}
+
+a:hover {
+  color: #0161ab;
+}
+
+a:active {
+  color: #0262ac;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  list-style: none;
+}
+
+#first-time {
+  border: 0.1rem solid darkred;
+}
+
+.sistema {
+  position: fixed;
+  right: 0;
+  top: 15%;
+  font-family: "PT Sans", sans-serif;
+  z-index: 9999;
+}
+
+li.expanded,
+li.leaf {
+  list-style-image: none !important;
+  list-style-type: none !important;
+  list-style: none !important;
+  cursor: pointer;
+}
+
+ul.primary {
+  width: 60px;
+  height: 140px;
+  line-height: normal;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+ul.primary li {
+  float: left;
+  margin: 0 0 5px;
+}
+
+ul.primary li a {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background: #e3dad6;
+  text-align: center;
+  color: white;
+  font-family: "Oswald", sans-serif;
+  -webkit-transition: all 600ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 600ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  font-size: 1.4rem;
+  line-height: 60px;
+  font-weight: normal;
+}
+
+ul.primary li.active a {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background: #e3dad6;
+  text-align: center;
+  color: white;
+  font-family: "Oswald", sans-serif;
+  -webkit-transition: all 600ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 600ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  font-size: 1.4rem;
+  line-height: 60px;
+  font-weight: normal;
+}
+
+ul.primary li a:hover {
+  background: #bdb0aa;
+  color: white;
+}
+
+ul.secondary {
+  border-bottom: 1px solid #bbbbbb;
+  padding: 0.5em 1em;
+  margin: 5px;
+}
+
+ul.secondary li {
+  border-right: 1px solid #cccccc;
+  display: inline;
+  padding: 0 1em;
+}
+
+ul.secondary a {
+  padding: 0;
+  text-decoration: none;
+}
+
+ul.secondary a.active {
+  border-bottom: 4px solid #999999;
+}
+
+.page-user #user-login {
+  width: 320px;
+  margin: 0 auto 0;
+}
+
+.page-user #user-login label {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.6rem;
+  line-height: 100%;
+  font-weight: normal;
+  margin: 0 0 10px;
+}
+
+.page-user #user-login input[type='text'],
+.page-user #user-login input[type='password'] {
+  width: 100%;
+  height: 35px;
+  border: thin solid #bdb0aa;
+  font-size: 1.4rem;
+  line-height: 100%;
+  font-weight: normal;
+  padding: 5px;
+  font-family: "Oswald", sans-serif;
+  color: #444444;
+}
+
+.page-user #user-login input[type='text']:focus,
+.page-user #user-login input[type='password']:focus {
+  border: thin solid red;
+  background: white;
+}
+
+.page-user #user-login input[type='submit'] {
+  width: 100px;
+  height: 35px;
+  background: #f17154;
+  color: white;
+  float: right;
+  border: none;
+  -webkit-transition: all 600ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 600ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  font-size: 1.4rem;
+  line-height: 100%;
+  font-weight: normal;
+  font-family: "Oswald", sans-serif;
+}
+
+.page-user #user-login input[type='submit']:hover {
+  background: #bdb0aa;
+  color: white;
+}
+
+.admin-sistema {
+  margin: -10px 5px 0 0;
+}
+
+.admin-sistema a {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background: #e3dad6;
+  text-align: center;
+  color: white;
+  font-family: "Oswald", sans-serif;
+  -webkit-transition: all 600ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 600ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  font-size: 1.4rem;
+  line-height: 60px;
+  font-weight: normal;
+}
+
+.admin-sistema a:hover {
+  background: #bdb0aa;
+  color: white;
+}

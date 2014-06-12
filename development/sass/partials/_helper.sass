@@ -1,0 +1,51 @@
+/*#CONTENIDO*/
+
+/*#CONTENIDO...........Lo estás leyendo*/
+/*#RESET...............Establece los valores iniciales*/
+/*#FONT-FACE...........Importamos fuentes de iconos y font-face*/
+/*#HOME................Estilos del home*/
+
+*
+    +box-sizing
+
+html
+    font-size: 62.5%
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section
+    display: block
+
+*:focus
+    outline: none
+    border: none
+    box-shadow: none
+
+body
+    +font
+    +legible
+
+
+p
+    +cero
+    margin: 0 0 10px
+    &:nth-last-child
+        margin: 0
+
+a
+    +link-colors($blue, $blue + 1, $blue + 2, white, $gray +1) // a, a:hover, a:active, a:visited, a:focus
+    +noUnder
+
+ul,
+li
+    +reset
+
+

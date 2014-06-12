@@ -1,15 +1,13 @@
 doctype html
-html(lang="es")
+html(lang="en")
   head
-    title= Myframework
+    title= pageTitle
+    script(type='text/javascript').
+      if (foo) {
+         bar(1 + 5)
+      }
   body
-    include partials/mixins
-    +header-wrapper
-    +header
-    header
-        +logotipo
-        +nav
-
+    h1 Jade - node template engine
     #container.col
       if youAreUsingJade
         p You are amazing

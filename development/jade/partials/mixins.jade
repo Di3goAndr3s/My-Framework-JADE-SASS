@@ -1,0 +1,214 @@
+mixin header
+    header
+        a.logotipo
+        nav
+            ul.menu
+                li
+                    a(href='#') foo
+                    a(href='#') bar
+                    a(href='#') baz
+                    a(href='#') foobar
+
+mixin header-wrapper
+    header
+        .wrapper
+            a.logotipo
+            nav
+                ul.menu
+                    li
+                        a(href='#') foo
+                        a(href='#') bar
+                        a(href='#') baz
+                        a(href='#') foobar
+
+mixin logotipo
+    a.logotipo
+
+mixin nav
+    nav
+        ul.menu
+            li
+                a(href='#') foo
+                a(href='#') bar
+                a(href='#') baz
+                a(href='#') foobar
+
+
+mixin article
+ article
+  h2 {{lorem | cut:true:80:'...'}}
+  p {{lorem | cut:true:280:'...'}}
+  ul
+   li
+    b <i class="fa fa-angle-right"></i> Twiiter:
+    {{lorem | cut:true:10:'...'}}
+   li
+    b <i class="fa fa-angle-right"></i> Email:
+     {{lorem | cut:true:10:'...'}}
+   li
+    b <i class="fa fa-angle-right"></i>  Website:
+     {{lorem | cut:true:10:'...'}}
+    .clear.s20
+  a(href="#agencyprofile").btnBluespin See more
+
+
+mixin pagination
+ .s40
+ div.text-center
+  ul.pagination.pagination-lg
+   li
+    a <
+   li.active
+    a 1
+   li
+    each val in [2, 3, 4, 5, '>']
+     a= val
+
+
+mixin columns
+ div.s60.clear
+ div.columns
+  +article
+  +article
+  +article
+
+mixin formSearch
+ form.formBox
+  input.form-control(type="text", placeholder="Search for Keyword")
+  button(type="button").btnYellow <i class="fa fa-search fa-2x"></i>
+  .s10
+  small <i class="fa fa-exclamation-triangle"></i>
+   .w5
+   {{lorem | cut:true:180:'...'}}
+
+mixin descriptionBox
+ div.descriptionBox
+  p {{lorem | cut:true:480:'...'}}
+ .s20.clear
+
+mixin title(title)
+ h1= title
+
+mixin formDate
+ form.formDate
+  input.span2#datePicker(size="16", type="text", value="Search for date")
+  button(type="button").btnYellow: i.fa.fa-calendar.fa-2x
+  .s10
+  small <i class="fa fa-exclamation-triangle"></i>
+   .w5
+   {{lorem | cut:true:180:'...'}}
+ script.
+  $('#datePicker').datepicker()
+
+mixin articleBlog
+ .s40
+ article.blogItem
+  b1()
+  h2 {{lorem | cut:true:180:'...'}}
+  .blogProfile
+    a(href="#agencyprofile"): img(ph-img="300x210")
+    .s10
+    a(href="#agencyprofile") <i class="fa fa-user"></i> {{lorem | cut:true:30:'...'}}
+    a(href="mailto:demo@demo.com") <i class="fa fa-envelope"></i> {{lorem | cut:true:30:'...'}}
+    a(href="#", target="_blank") <i class="fa fa-twitter"></i> {{lorem | cut:true:30:'...'}}
+    .s20
+    .tags
+      a lorem
+      a Ipsum
+      a Dolor
+      a Sit
+      a Amet
+      a lorem
+      a Ipsum
+      a Dolor
+      a Sit
+      a Amet
+      a lorem
+      a Ipsum
+      a Dolor
+      a Sit
+      a Amet
+  .w20
+  .blogContent
+    +blogStatus
+    p {{lorem | cut:true:180:'...'}}
+    p {{lorem | cut:true:480:'...'}}
+    p {{lorem | cut:true:680:'...'}}
+    p {{lorem | cut:true:680:'...'}}
+  .s20
+  form.blogComments
+   .profileComments
+    img(ph-img="200x140")
+    .s20
+    p <i class="fa fa-user"></i> {{lorem | cut:true:30:'...'}} <b>say:</b>
+   textarea(placeholder="Comments")
+   .s10.clear
+   small <i class="fa fa-info fa-2x"></i>
+    .w5
+    {{lorem | cut:true:180:'...'}}
+   button.btnYellow: i.fa.fa-comments-o.fa-2x
+  .s20
+  h3 Comments
+  .s20
+  +blogComment
+  +blogComment
+  +paginationSmall
+
+
+
+mixin blogComment
+  .s10
+  .blogCommentslist
+   +blogStatuscomments
+   p {{lorem | cut:true:680:'...'}}
+
+
+mixin blogStatus
+   .blogUser
+    p <i class="fa fa-user"></i> <b>Posted for </b>
+     a(href="#agencyprofile") {{lorem | cut:true:30:'...'}}
+     span <i class="fa fa-calendar-o"></i> <b>Posted in </b>Thuesday, 12/11/2014
+     a(href="#", target="_blank").twitter <i class="fa fa-twitter fa-2x"></i>
+     a(href="#", target="_blank").facebook <i class="fa fa-facebook fa-2x"></i>
+   .clear.s20
+
+mixin blogStatuscomments
+   .blogUser.text-right
+    p <i class="fa fa-user"></i> <b>Posted for </b>
+     a(href="#agencyprofile") {{lorem | cut:true:30:'...'}}
+     span <i class="fa fa-calendar-o"></i> <b>Posted in </b>Thuesday, 12/11/2014
+   .clear.s40
+
+
+mixin paginationSmall
+ .s20
+ div.text-center
+  ul.pagination
+   li
+    a <
+   li.active
+    a 1
+   li
+    each val in [2, 3, 4, 5, '>']
+     a= val
+
+mixin accordion
+ h2 {{lorem | cut:true:80:'...'}}
+ article
+  p {{lorem | cut:true:380:'...'}}
+  p {{lorem | cut:true:280:'...'}}
+  a see more
+
+mixin tabsColumns
+ div
+      img(ph-img="380x240")
+      .s20
+      p {{lorem | cut:true:280:'...'}}
+     div
+      img(ph-img="380x240")
+      .s20
+      p {{lorem | cut:true:280:'...'}}
+     div
+      img(ph-img="380x240")
+      .s20
+      p {{lorem | cut:true:280:'...'}}
