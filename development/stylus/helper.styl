@@ -1,0 +1,228 @@
+
+
+transparent()
+  background rgba(0,0,0,0)
+
+.borderfix
+  border .1rem solid rgba(0,0,0,0)
+
+clear =
+  clear both
+
+cero =
+  margin 0
+  padding 0
+
+b1()
+  border .1rem solid red
+
+b2()
+  border .1rem solid blue
+
+b3()
+  border .1rem solid green
+
+clearfix()
+  &:before
+  &:after
+    content: ""
+    display: table
+  &:after
+    clear: both
+  zoom: 1 if support-for-ie
+
+overflow()
+  if arguments[0] == ellipsis
+    ellipsis()
+  else
+    overflow: arguments
+
+
+-pos(type, args)
+  i = 0
+  position: unquote(type)
+  for j in (1..4)
+    if length(args) > i
+      {args[i]}: args[i + 1] is a 'unit' ? args[i += 1] : 0
+    i += 1
+
+/*
+ * Position utility.
+ *
+ * Synopsis:
+ *
+ *   fixed: <pos> [n] <pos> [n]
+ *
+ * Examples:
+ *
+ *     fixed: top left
+ *     fixed: top 5px left
+ *     fixed: top left 5px
+ *     fixed: top 5px left 5px
+ *
+ */
+
+fixed()
+  -pos('fixed', arguments)
+
+/*
+ * Position utility.
+ *
+ * Synopsis:
+ *
+ *   absolute: <pos> [n] <pos> [n]
+ *
+ * Examples:
+ *
+ *     absolute: top left
+ *     absolute: top 5px left
+ *     absolute: top left 5px
+ *     absolute: top 5px left 5px
+ *
+ */
+
+absolute()
+  -pos('absolute', arguments)
+
+/*
+ * Position utility.
+ *
+ * Synopsis:
+ *
+ *   relative: <pos> [n] <pos> [n]
+ *
+ * Examples:
+ *
+ *     relative: top left
+ *     relative: top 5px left
+ *     relative: top left 5px
+ *     relative: top 5px left 5px
+ *
+ */
+
+relative()
+  -pos('relative', arguments)
+
+
+global-reset()
+  html, body, div, span, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code,
+  del, dfn, em, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td
+    reset-box-model()
+    reset-font()
+  body
+    reset-body()
+  ol, ul
+    list-style: none
+  table
+    reset-table()
+  caption, th, td
+    reset-table-cell()
+  a img
+    border: none
+
+nested-reset()
+  div, span, object, iframe, h1, h2, h3, h4, h5, h6, p,
+  pre, a, abbr, acronym, address, code, del, dfn, em, img,
+  dl, dt, dd, ol, ul, li, fieldset, form, label,
+  legend, caption, tbody, tfoot, thead, tr
+    reset-box-model()
+    reset-font()
+  table
+    reset-table()
+  caption, th, td
+    reset-table-cell()
+  a img
+    border: none
+
+reset-box-model()
+  margin: 0
+  padding: 0
+  border: 0
+  outline: 0
+
+reset-font()
+  font-weight: inherit
+  font-style: inherit
+  font-family: inherit
+  font-size: 100%
+  vertical-align: baseline
+
+reset-body()
+  line-height: 1
+  color: black
+  background: white
+
+reset-table()
+  border-collapse: separate
+  border-spacing: 0
+  vertical-align: middle
+
+reset-table-cell()
+  text-align: left
+  font-weight: normal
+  vertical-align: middle
+
+reset-html5()
+  article, aside, canvas, details, figcaption,
+  figure, footer, header, hgroup, menu, nav,
+  section, summary, main
+    reset-box-model()
+    display: block
+  audio, canvas, video
+    display inline-block
+    *display inline
+    *zoom 1
+  audio:not([controls]),[hidden]
+    display none
+
+/*
+ * Size utility.
+ *
+ * Synopsis:
+ *
+ *   size: <width> <height> | <width & height>
+ *
+ * Examples:
+ *
+ *     size: 100% 30px
+ *       yields:
+ *         width: 100%
+ *         height: 30px
+ *
+ *     size: 5px
+ *       yields:
+ *         width: 5px
+ *         height: 5px
+ *
+ */
+
+input::-webkit-input-placeholder
+ color $greyDark
+ fontLight()
+ color #000
+
+input::-moz-placeholder
+ color $greyDark
+ fontLight()
+ color #000
+
+input:-ms-input-placeholder
+ color $greyDark
+ fontLight()
+ color #000
+
+input:-moz-placeholder
+ color $greyDark
+ fontLight()
+ color #000
+
+
+
+
+

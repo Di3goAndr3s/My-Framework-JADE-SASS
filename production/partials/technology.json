@@ -1,0 +1,29 @@
+[{
+    "name": "Technology 1",
+    "type": "Technology",
+    "coords": {
+        "lat": 7.188101,
+        "lng": -8.796388
+    }
+}, {
+    "name": "Technology 2",
+    "type": "Technology",
+    "coords": {
+        "lat": 18.062312,
+        "lng": 17.739256
+    }
+}, {
+    "name": "Technology 3",
+    "type": "Technology",
+    "coords": {
+        "lat": 8.754795,
+        "lng": 47.709959
+    }
+}, {
+    "name": "Technology 4",
+    "type": "Technology",
+    "coords": {
+        "lat": 2.021065,
+        "lng": 17.211912
+    }
+}]

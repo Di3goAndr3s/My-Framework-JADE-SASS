@@ -1,0 +1,22 @@
+[{
+    "name": "Meals 1",
+    "type": "Meals",
+    "coords": {
+        "lat": 18.562947,
+        "lng": -1.948244
+    }
+}, {
+    "name": "Meals 2",
+    "type": "Meals",
+    "coords": {
+        "lat": 6.926427,
+        "lng": 32.3291
+    }
+}, {
+    "name": "Meals 1",
+    "type": "Meals",
+    "coords": {
+        "lat": -1.318243,
+        "lng": 23.276365
+    }
+}]

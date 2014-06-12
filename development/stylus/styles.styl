@@ -1,0 +1,902 @@
+@font-face
+    font-family brandon_grotesquemedium
+    font-style normal
+    src: url(../fonts/brandon_med-webfont.ttf)
+
+
+@font-face
+    font-family brandon_grotesque_regularRg
+    font-style normal
+    src: url(../fonts/brandon_reg-webfont.ttf)
+
+@font-face
+    font-family brandon_grotesquebold
+    font-style normal
+    src: url(../fonts/brandon_bld-webfont.ttf)
+
+@font-face
+    font-family brandon_grotesquelight
+    font-style normal
+    src: url(../fonts/brandon_light-webfont.ttf)
+
+
+body
+  background white
+  fontMedium()
+
+header div:nth-of-type(1)
+  size: 16.5rem
+  absolute()
+  top 0rem
+  left 50%
+  margin 0 0 0 -8.75rem
+  z(9)
+  bg white
+  br(100%)
+  a
+   background url(../img/logo.png)
+   block()
+   relative()
+   centered(1.5rem,0)
+   size: 13.5rem, 13.5rem
+
+
+header .wrapper
+  > ul
+    w100()
+    z(99)
+    {tCenter}
+    > li
+      inlineBlock()
+      > a
+         block()
+         color grey
+         fs(1.3rem, 12rem, normal)
+         height 12rem
+         padding: 0 2.5rem;
+         upper()
+         border-top .4rem solid white
+         &:hover
+         &.activeMenu
+          color $blue
+          {nounder}
+          border-top .4rem solid $blue
+      &:nth-of-type(5)
+          margin: 0 0 0 15rem
+      &:nth-of-type(1)
+       margin 0 0 0 -6rem
+
+figure.banner
+  size: 100%, 52.5rem
+  {cPointer}
+  relative()
+  {cero}
+  img
+   filter blur(.3rem)
+   {cero}
+   size(100%)
+  div.overBanner
+   size: 100%, 52.5rem
+   absolute: top 0 left 0
+   background url(../img/overBanner.png)
+  div.wrapper
+   absolute: top 0 left 50%
+   {tCenter}
+   margin: 0 0 0 -60rem
+   {maxWidth}
+   div.textBanner
+    color white
+    fs(4.5rem,120%, normal)
+    border-top .1rem solid white
+    border-bottom .1rem solid white
+    padding 1.5rem 0
+    {maxWidth}
+    fontLight()
+    upper()
+    {tCenter}
+    {relative}
+    centered(15rem,6rem)
+    relative()
+   b
+    fontMedium()
+    inlineBlock()
+
+a.btnWhite
+ border .2rem solid white
+ btn()
+ &:hover
+  br(1rem)
+
+a.btnBluespin
+ border .2rem solid white
+ btn()
+ &:hover
+  br(1rem)
+
+a.btnBlue
+ border .2rem solid $blueLight
+ bg($blueLight)
+ btn()
+ &:hover
+  transform rotateX(360deg)
+  border .2rem solid $blueDark
+  bg($blueDark)
+
+a.btnYellow
+button.btnYellow
+ border .2rem solid $yellow
+ bg($yellow)
+ btn()
+ &:hover
+  border .2rem solid $blue
+  bg($blue)
+
+
+figure.banner::before
+ content ''
+ size(4rem)
+ bg(white)
+ block()
+ absolute: bottom 0 left 50%
+ z(9999)
+ transform rotate(45deg)
+ margin 0 0 -2.5rem -2rem
+
+figure.banner::after
+ content '\f107'
+ size(4rem, 2rem)
+ block()
+ absolute: bottom 0 left 50%
+ z(9999)
+ fs(1.8rem, 100%, lighter)
+ color $blue
+ margin 0 0 -.5rem -2rem
+ font-family FontAwesome
+ text-align center
+
+div.bulletNav
+ absolute: top 40% left 3%
+ size(2rem, 4rem)
+ a
+  size(1.5rem)
+  br(100%)
+  bg(rgba(255,255,255,.8))
+  margin: 0 0 1rem
+
+div.bulletNav a.active
+  border .3rem solid white
+  bg(rgba(255,255,255,0))
+
+section.map
+ relative()
+ margin 8rem 0 0
+ h2
+  color $grey
+  fs(2.4rem, 100%, normal)
+  upper()
+  fontLight()
+  {tCenter}
+
+
+
+section.rss
+ inlineBlock()
+ size(48%,44rem)
+ margin 8rem 0
+ b1()
+
+aside.twitter
+ inlineBlock()
+ size(48%, 44rem)
+ b2()
+
+section.contentBottom
+ size(100%, 14.5rem)
+ bg($greySpin)
+ p
+  fs(2.4rem, 14.5rem, normal)
+  color $greySpin - 40%
+  fontRegular()
+ a
+  absolute: bottom 5rem right 1rem
+  {tCenter}
+
+
+
+/*Internal Sections*/
+
+.aboutus article
+  padding 1rem 1rem 2rem
+  margin 4rem 0 0
+  gradient(top, #ffffff, #ffffff)
+  border-bottom thin dotted $grey
+  img
+   size(40rem, 24rem)
+   {imgBorder}
+   {fLeft}
+  h2
+   {fRight}
+   size(76rem, auto)
+  p
+   {fRight}
+   size(76rem, auto)
+
+.ourservices article
+  padding 1rem 1rem 3rem
+  margin 4rem 0 0
+  gradient(top, #ffffff, #fffff1)
+  relative()
+  &::before
+   content ''
+   size(1rem)
+   block()
+   absolute: bottom 0 left 50%
+   z(9999)
+   transform rotate(45deg)
+   margin 0 0 -.5rem -.5rem
+
+
+.ourservices article:nth-of-type(odd)
+  border-bottom .3em solid $yellow
+  &::before
+   bg($yellow)
+
+.ourservices article:nth-of-type(even)
+  border-bottom .3em solid $blue
+  &::before
+   bg($blue)
+
+
+/*.brakeLine
+ size(100%, .1rem)
+ bg($grey)
+ relative()
+ &:before
+  size(1rem)
+  br(100%)
+  content ''
+  bg($yellow)
+  absolute: top 0 left 50% */
+
+.descriptionBox
+ bg($grey)
+ padding 2rem 2rem 1rem
+ relative()
+ {oHidden}
+ p
+  color white
+  fs(1.8rem, 120%, normal)
+  fontLight()
+ &::before
+  content ''
+  size(2rem)
+  block()
+  absolute: top 0 left 50%
+  z(9999)
+  transform rotate(45deg)
+  margin -1rem 0 0 -1rem
+  bg(white)
+
+.register
+ div.accordion
+  margin 2rem 0 0
+  h2
+   {cPointer}
+   cubicBezier(all, 600ms)
+   z(9999)
+   color white
+   background ($blueDark)
+   height 4rem
+   line-height 4rem
+   padding 0 0 0 3rem !important
+   relative()
+   &:hover
+    padding 0 0 0 3.5rem
+    bg($blueFade)
+  article
+   border-bottom thin dotted $grey
+   height 0
+   {transition}
+   p
+    {tJustify}
+    padding 2rem 1rem 0rem
+   a
+    {tCenter}
+    {fRight}
+    margin 0 0 1.5rem
+    relative()
+
+.closeAccordion
+ height 0
+
+.openAccordion
+ height 24rem !important
+
+.openFormbelong
+ height 100rem !important
+
+.activeAccordion
+ background $blue !important
+ padding 0 0 0 3.5rem !important
+ &::before
+    transform rotate(90deg)
+
+.register h2::before
+    content '\f0da'
+    absolute: left 1.5rem top 1rem
+    color white
+    {tCenter}
+    {fontIcon}
+    fs(1.8rem, 100%, normal)
+
+/*.overlay
+ size(100%)
+ bg(rgba(0,0,0, 0))
+ absolute: top -200rem left 0
+ {transition}
+ z(9999)
+
+.modalBox
+ size(80rem, 54rem)
+ br(1rem)
+ bg(white)
+ box-shadow .3rem .3rem 0 rgba(255,255,255,.8)
+ absolute: top 50% left -200rem
+ {transition}
+ padding 5rem 2rem 2rem
+ z(99999)
+ margin -27rem 0 0rem 0rem
+
+
+.openOverlay
+ absolute: top 0 left 0
+ bg(rgba(0,0,0,.8))
+ {cPointer}
+
+.openmodalBox
+ absolute: top 50% left 50%
+ margin -27rem 0 0rem -40rem*/
+
+div.formBelong
+ border-top thin dotted $grey
+ border-bottom thin dotted $grey
+ float left
+ margin 0 0 0
+ relative()
+ padding 2rem
+ p
+  padding 2rem 0 !important
+ form
+  label
+   color $blueFade
+  span
+   color red
+   margin 0 0 0 1rem
+  small
+   fs(1.6rem, 100%, normal)
+   inlineBlock()
+   margin 1rem 0 0
+   fontLight()
+   color $greyDark
+  button
+   {fRight}
+
+a.scrollClick
+ height 0
+ width 0
+
+
+div.showConfirm
+ max-width 90rem
+ {cPointer}
+ i
+  {fRight}
+  fs(2rem, 100%, normal)
+  margin .2rem 1rem 0 1rem
+
+.directories
+  form
+   label
+    color $blueFade
+  div.columns
+   {modelBox}
+   article
+    {spaceBox}
+    {noScroll}
+    relative()
+    margin: 0 1rem
+    img
+     margin 0 0 0rem
+     {cPointer}
+     {imgBorder}
+    a.over
+     absolute: bottom -18rem left 0
+     bgBlack(.8)
+     padding 2rem
+     size(100%, 24.8rem)
+     &:hover
+      {noUnder}
+     h2
+      color white
+     p
+      color white
+     span
+      br(50%)
+      size(4rem)
+      bgWhite(1)
+      display block
+      absolute: bottom 1rem left 50%
+      margin 0 0 0 -2rem
+      {tCenter}
+      &:hover
+       transform rotateX(360deg)
+      i
+       color rgba(0,0,0,.8)
+       centered(.8rem,0)
+
+.agencyprofile
+ img
+  inlineBlock()
+  {imgBorder}
+  vertical-align top
+ .profileItems
+  inlineBlock()
+  size(73rem, auto)
+  margin 0 0 0 2rem
+  .labelProfile
+   fontBold()
+   {fLeft}
+   width auto
+   margin 0 2rem 0 0
+   padding 1.5rem 0 0
+   fs(1.6rem, 100%, normal)
+   color $blueFade
+   height 4.4rem
+ .profileItemslarge
+  inlineBlock()
+  size(100%, auto)
+  .labelProfile
+   fontBold()
+   {fLeft}
+   width auto
+   margin 0 2rem 0 0
+   padding 1.5rem 0 0
+   fs(1.6rem, 100%, normal)
+   color $blueFade
+   height 4.4rem
+
+
+.editable-click
+a.editable-click
+ {noBorder}
+ padding 1.5rem 0 0
+ color $greyDark
+ fs(1.6rem, 100%, normal)
+ fontLight()
+ {transition}
+ {cPointer}
+ &:hover
+  color $blue
+
+.editable-empty
+.editable-empty:hover
+.editable-empty:focus
+ color $yellow
+ padding 1.5rem 0 0
+ fs(1.6rem, 100%, normal)
+ fontLight()
+
+input.editable-input
+ {myInput}
+ min-width 30rem
+ margin .5rem 0
+
+textarea.editable-input
+ {myInput}
+ min-width 50rem
+ min-height 8rem
+ {oHidden}
+ margin .5rem 0 1rem
+
+.editable-wrap .editable-buttons
+ button
+  size(3.4rem)
+  relative()
+  br(1rem)
+ button:nth-of-type(1)
+  bg($success)
+  color $success
+ button:nth-of-type(2)
+  bg($danger)
+  color $danger
+
+.editable-wrap .editable-buttons button:nth-of-type(1)::before
+ content '\f00c'
+ size(3.4rem)
+ fs(1.6rem, 3.4rem, normal)
+ absolute: bottom 0 left 0
+ color white
+ font-family FontAwesome
+ text-align center
+
+.editable-wrap .editable-buttons button:nth-of-type(2)::before
+ content '\f00d'
+ size(3.4rem)
+ absolute: bottom 0 left 0
+ fs(1.6rem, 3.4rem, normal)
+ color white
+ font-family FontAwesome
+ text-align center
+
+.profileItems div
+.profileItemslarge div
+ border-bottom .1rem dotted $grey
+
+.editable-wrap .editable-buttons
+ margin .5rem 0 0
+
+.linkDocuments
+ {noBorder}
+ padding 0 0 2rem
+ b1()
+ a
+  width 91%
+  margin .5rem 0 0 !important
+  {fRight}
+  i
+   margin 0 1rem 0 0
+ input[type="file"]
+  margin 2rem 0
+  {cBoth}
+  {fLeft}
+
+
+
+.vacancyList
+ div.columns
+  {modelBox}
+  article
+   {spaceBox}
+   border-top .1rem solid white
+   border-left thin solid $greyLight
+   border-right thin solid $greyLight
+   border-bottom .4rem solid $yellow
+   box-shadow 0rem .5rem 2rem white
+   {noScroll}
+   relative()
+   padding 2rem 1rem
+   margin 0 1rem
+   h2
+    {tCenter}
+   b
+    padding 0 1rem 0 0
+   a
+    border .2rem solid $blue
+    color $blue
+    {tCenter}
+    &:hover
+     border .2rem solid $blueDark
+     color $blueDark
+   ul
+    {w100}
+    margin 2rem 0 0
+    {fLeft}
+    {cBoth}
+    {reset}
+    li
+     color $grey
+     padding .5rem 1rem .5rem 0
+
+.vacancyList div.columns article:nth-of-type(2)
+ margin 0 4rem
+ border-bottom .4rem solid $blueFade
+
+.vacancyList div.columns article:hover
+ box-shadow 0rem .1rem .5rem $greyLight
+
+form.formBox
+ relative()
+ size(100%, auto)
+ padding 2rem 2rem 1rem
+ bg($greyDark)
+ input
+  {myInput}
+  inlineBlock()
+  font-size 2rem
+  color $grey
+  fontLight()
+ small
+  color white
+  fontLight()
+ button
+  size(4.4rem)
+  absolute: top 2rem right 2rem
+  padding 0
+  fs(1.2rem, 100%, normal)
+  {transition}
+  i
+   margin 0rem 0 0
+
+
+form.formDate
+ relative()
+ size(100%, auto)
+ padding 2rem 2rem 1rem
+ bg($greyDark)
+ input
+  {myInput}
+  inlineBlock()
+  font-size 2rem
+  color $grey
+  fontLight()
+ small
+  color white
+  fontLight()
+ button
+  size(4.4rem)
+  absolute: top 2rem right 2rem
+  padding 0
+  fs(1.2rem, 100%, normal)
+  {transition}
+  i
+   margin 0rem 0 0
+
+
+.blog
+ article
+  border-bottom .3rem solid $blueFade
+  padding 0 0 3rem
+  .blogProfile
+   size(30rem, 100%)
+   inlineBlock()
+   vAlign(top)
+  .blogContent
+   size(87rem, 100%)
+   inlineBlock()
+   a.facebook
+    bg($facebook-1)
+    &:hover
+     bg($facebook-2)
+   a.twitter
+    bg($twitter-1)
+    &:hover
+     bg($twitter-2)
+
+
+.blogProfile img
+ border .2rem solid $greyLight
+
+.blogProfile a:nth-of-type(1)
+ {noBorder}
+
+.blogProfile
+ for i in 2 3 4
+  a:nth-of-type({i})
+   color $blue
+   margin 0 1rem
+   borderBottom($grey)
+   i
+    margin 0 1rem 0 0
+
+.blogContent
+ a.twitter
+ a.facebook
+    color white
+    {fRight}
+    size(2.5rem)
+    inlineBlock()
+    br(10%)
+    {tCenter}
+    margin .4rem .5rem 0 0
+    {transition}
+    i
+     margin .6rem 0 0
+     fs(1.6rem, 100%, normal)
+    &:hover
+     transform translate(0rem,-.1rem)
+
+.blogCommentslist
+ border-left .2rem solid $yellow
+ padding 0 0 0 3rem
+ h3
+  padding 0 0 1rem
+ p
+  padding 0 0 1rem
+
+
+.blogUser
+ {w100}
+ margin 0 0 .5rem
+ p
+  {fLeft}
+  {w100}
+  fs(1.2rem, 3.2rem, normal)
+  fontRegular()
+  color greyLight
+  border-top thin solid $greyLight
+  border-bottom thin solid $greyLight
+  padding 0
+  a
+   inlineBlock()
+   margin 0 0 0 0rem
+ span
+  inlineBlock()
+  fs(1.2rem, 100%, normal)
+  margin 0 0 0 1.5rem
+
+form.blogComments
+ relative()
+ {noScroll}
+ bg(#f1f1f1)
+ border thin solid $greyLight
+ padding 2rem 2rem 1rem
+ textarea
+  {fRight}
+  max-width 90rem
+  max-height 20rem
+  min-width 90rem
+  min-height 20rem
+  overflow-x hidden
+  border-bottom .2rem solid $greyLight
+  {transition}
+  resize none
+  &:focus
+   border-bottom .2rem solid $greyDark
+ button
+  size(4rem)
+  float right !important
+  fs(1rem, 4rem, normal)
+  padding 0
+  {transition}
+ small
+  color $grey
+  line-height 2rem
+  height 3rem
+  margin 1rem 0 0
+  {fLeft}
+  i
+   vertical-align middle
+
+
+.pagination
+ {resetForce}
+
+.profileComments
+ width 24rem
+ {tCenter}
+ {fLeft}
+ img
+  border .2rem solid white
+ p
+  color $grey
+
+
+
+
+//form.blogComments::before
+// content ''
+// size(4rem)
+// bg($greyFade)
+// block()
+// absolute: bottom 0 left 50%
+// z(9999)
+// transform rotate(45deg)
+// margin 0 0 -2.5rem -2rem
+
+form.blogComments::after
+ content ''
+ size(2rem)
+ bg(white)
+ block()
+ absolute: top 6rem left 27rem
+ z(9999)
+ transform rotate(45deg)
+
+.tags
+ color $blueLight
+ margin 0 1rem
+ fontBold()
+ {tCenter}
+ a
+  inlineBlock()
+  margin 0 1rem
+  {noBorder}
+ a:nth-of-type(odd)
+  fs(1.4rem, 120%, normal)
+ a:nth-of-type(even)
+  fs(2rem, 120%, normal)
+
+
+
+.calendarBox
+ width 40%
+ {fLeft}
+
+.calendarEvents
+ {fRight}
+ width 58%
+ h2
+   {cPointer}
+   cubicBezier(all, 600ms)
+   z(9999)
+   color white
+   background ($blueDark)
+   height 4rem
+   line-height 4rem
+   padding 0 0 0 3rem !important
+   relative()
+   &:hover
+    padding 0 0 0 3.5rem
+    bg($blueFade)
+  article
+   border-bottom thin dotted $grey
+   height 0
+   {transition}
+   p
+    {tJustify}
+    padding 2rem 1rem 0rem
+   a
+    {tCenter}
+    {fRight}
+    margin 0 1rem 1.5rem 0
+    relative()
+
+.calendarEvents h2::before
+    content '\f0da'
+    absolute: left 1.5rem top 1rem
+    color white
+    {tCenter}
+    {fontIcon}
+    fs(1.8rem, 100%, normal)
+
+
+//
+// .closeAccordion
+// height 0
+//
+//.openAccordion
+// height 24rem !important
+
+.contentDirectory
+ .sliderBox
+   width 46rem
+   {fLeft}
+   ul
+    li
+     height 32rem
+ .contentBox
+   width 69rem
+   {fRight}
+
+
+.sliderBox
+ .bx-viewport
+  {noBorder}
+  {reset}
+  left 0
+  box-shadow 0,0,0 rgba(0,0,0,0)
+
+.profileTabs
+ #content1
+ #content2
+ #content3
+ #content4
+  {modelBox}
+  div
+   {spaceBox}
+
+.profileTabs
+ #content1 div:nth-of-type(2)
+ #content2 div:nth-of-type(2)
+ #content3 div:nth-of-type(2)
+ #content4 div:nth-of-type(2)
+  margin 0 2rem
+
+.marco-mapa
+ height: 46.5rem
+ centered(6rem,0)
+ {w100}
+ b1()
+
+
+

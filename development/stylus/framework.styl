@@ -1,0 +1,341 @@
+
+w100 =
+  width 100%
+
+w50 =
+  width 50%
+
+/*size(width, height)
+  width width
+  height height*/
+
+block()
+  display block
+
+centered(autoTop, autoBot )
+ margin autoTop auto autoBot
+/*
+absolute()
+ position absolute
+*/
+
+
+z(index)
+  z-index index
+
+inline()
+ display inline
+
+inlineBlock()
+ display inline-block
+ vertical-align middle
+
+fs(font, height, weight)
+ font-size font
+ line-height height
+ font-weight weight
+
+upper()
+  text-transform uppercase
+
+nounder =
+  text-decoration none
+
+trans(speed)
+ transition all cubic-bezier(.94,.94,.04,.98) speed
+
+transition =
+ transition all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55)
+
+
+cubicBezier(valor, speed)
+ transition valor speed cubic-bezier(0.68, -0.55, 0.265, 1.55)
+
+
+
+br(radius)
+ border-radius radius
+
+tCenter =
+    text-align center
+
+
+size()
+  if length(arguments) == 1
+    width: arguments[0]
+    height: arguments[0]
+  else
+    width: arguments[0]
+    height: arguments[1]
+
+border(color, args...)
+  if color is a 'color'
+    border: .1rem solid color args
+  else
+    border: arguments
+
+
+bg(color, args...)
+  if color is a 'color'
+    background: color args
+  else
+    background: arguments
+
+fontMedium()
+    font-family brandon_grotesquemedium
+
+fontRegular()
+    font-family brandon_grotesque_regularRg
+
+fontBold()
+ font-family brandon_grotesquebold
+
+fontLight()
+ font-family brandon_grotesquelight
+
+fontIcon =
+  font-family FontAwesome
+
+maxWidth =
+  max-width 120rem
+
+wAuto =
+  width auto
+
+cPointer =
+ cursor pointer
+
+
+btn()
+ padding 1.5rem 2rem
+ fs(1.6rem, 100%, normal)
+ color white
+ upper()
+ width 20rem
+ inlineBlock()
+ {cPointer}
+ &:hover
+  {nounder}
+
+.w5
+ width .5rem
+ inlineBlock()
+
+
+.w10
+ width 1rem
+ inlineBlock()
+
+.w20
+ width 2rem
+ inlineBlock()
+
+.w30
+ width 3rem
+ inlineBlock()
+
+.w40
+ width 4rem
+ inlineBlock()
+
+.w50
+ width 5rem
+ inlineBlock()
+
+fLeft =
+    float left
+
+fRight =
+    float right
+
+.clear
+ clear both
+ {w100}
+ {noBorder}
+
+cBoth =
+ clear both
+
+cLeft =
+ clear left
+
+cRight =
+ clear right
+
+oHidden =
+  overflow hidden
+
+
+gradient(direction, color1, color2 )
+ background-image linear-gradient(direction, color1, color2)
+
+tJustify =
+  text-align justify
+
+bBottom(type, color)
+ thin type color
+
+
+dBlock =
+ display block
+
+dNone =
+ display none
+
+reset =
+ margin-top 0
+ margin-left 0
+ margin-right 0
+ margin-bottom 0
+ padding-top 0
+ padding-left 0
+ padding-right 0
+ padding-bottom 0
+
+resetForce =
+ margin-top 0 !important
+ margin-left 0 !important
+ margin-right 0 !important
+ margin-bottom 0 !important
+ padding-top 0 !important
+ padding-left 0 !important
+ padding-right 0 !important
+ padding-bottom 0 !important
+
+.s5
+ height .5rem
+
+.s10
+ height 1rem
+
+.s20
+ height 2rem
+
+.s30
+ height 3rem
+
+.s40
+ height 4rem
+
+.s50
+ height 5rem
+
+.s60
+ height 6rem
+
+.clear
+ clear both
+
+borderBottom(color)
+  border-bottom thin dotted color
+
+noScroll =
+ overflow hidden
+
+modelBox =
+  display -webkit-box
+  display -moz-box
+  display -ms-flexbox
+  display -webkit-flex
+  display flex
+
+
+
+spaceBox =
+  -webkit-flex-flow row wrap
+  justify-content space-around
+  {modelBox}
+
+relative =
+ position relative
+
+.tCenter
+ text-align center
+
+noUnder =
+ text-decoration none
+
+
+imgBorder =
+ border .2rem solid $greyFade
+
+noBorder =
+ border-left none !important
+ border-right none !important
+ border-top none !important
+ border-bottom none !important
+ border none !important
+
+noText =
+ text-indent -99rem
+
+
+myInput =
+ display block
+ width 100%
+ height 44px
+ padding 6px 12px
+ font-size 14px
+ line-height 1.42857143
+ color #555
+ background-color #fff
+ background-image none
+ border 1px solid #ccc
+ border-radius 0px
+ box-shadow inset 0 1px 1px rgba(0,0,0,.075)
+ -webkit-transition border-color ease-in-out .15s, box-shadow ease-in-out .15s
+ transition border-color ease-in-out .15s, box-shadow ease-in-out .15s
+ &:focus
+  border-color #66afe9
+  outline 0
+  -webkit-box-shadow inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6)
+  box-shadow inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6)
+
+
+/*
+.form-control::-moz-placeholder {
+  color: #999;
+  opacity: 1;
+}
+.form-control:-ms-input-placeholder {
+  color: #999;
+}
+.form-control::-webkit-input-placeholder {
+  color: #999;
+}
+*/
+
+tUnder =
+ text-decoration underline
+
+input[type="file"]
+ {myInput}
+
+.b1
+ border thin solid red
+
+
+placeholder(font, color)
+ font-size font
+ color color
+
+.pagination
+ li
+  a
+
+vAlign(valor)
+ vertical-align valor
+
+//for i in (1..15)
+//  div:nth-child({i})::after
+//    content \'i\'
+
+
+.s(value)
+ height valuerem
+
+tRight =
+ text-align right
+
+textarea
+ padding 1rem

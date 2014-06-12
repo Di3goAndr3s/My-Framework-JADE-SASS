@@ -1,0 +1,140 @@
+*
+  box-sizing border-box
+  -webkit-box-sizing border-box
+  -moz-box-sizing border-box
+  outline none
+  border none
+  list-style none
+  text-decoration none
+  background-clip padding-box
+  -webkit-background-clip padding-box
+  -moz-background-clip padding-box
+  border 0
+  outline 0
+  vertical-align baseline
+  {cero}
+
+html
+  font-size 62.5%;
+
+body
+  {cero}
+  overflow
+
+a
+ text-decoration none
+ display block
+ trans(.5s)
+ {cPointer}
+ {pointer}
+ &:hover
+   text-decoration underline
+
+p
+ fontRegular()
+ fs(1.6rem, 120%, normal)
+ color $grey
+ margin 0 0 1rem
+ &:last-child
+  margin 0
+
+ul
+  li
+    list-style none
+
+
+header
+  {w100}
+  {cero}
+  size: 100% 12rem
+
+.wrapper
+  relative()
+  {maxWidth}
+  centered(0, 0)
+  width 120rem
+
+
+main
+ margin 1rem 0 4rem
+
+figure
+   {cero}
+
+h1, h2, h3, h4, h5, h6
+ color $blueDark
+ upper()
+ fontBold()
+ {reset}
+
+
+h1
+ font-size 2.4rem
+ margin 0 0 2rem
+
+h2
+ font-size 1.8rem
+
+h3
+ font-size 1.6rem
+
+h4
+ font-size 1.5rem
+
+h5
+ font-size 1.4rem
+
+h6
+ font-size 1.3rem
+
+article
+ {oHidden}
+
+h2
+ padding 0 0 2rem
+ color $blueDark
+
+footer
+ relative()
+ size(100%, 18rem)
+ bg($greyDark)
+ div.wrapper
+  div:nth-of-type(1)
+   inlineBlock()
+   size(32%, 4.5rem)
+   vertical-align middle
+   margin 7.5rem 0 0 0
+   a
+    inlineBlock()
+    bgWhite(.5)
+    size(4.5rem)
+    br(100%)
+    margin 0 0 0 .8rem
+    {tCenter}
+    &:hover
+     bgWhite(1)
+    i
+     color ($greyDark)
+     centered(1.2rem,0)
+  div:nth-of-type(2)
+   inlineBlock()
+   size(40%, 4.5rem)
+   vertical-align middle
+   margin 7.5rem 0 0 0
+   fs(1.6rem,4.5rem, normal)
+   fontMedium()
+   color $greyFade
+   upper()
+   span
+    color $yellow
+
+
+
+
+
+
+
+
+
+
+

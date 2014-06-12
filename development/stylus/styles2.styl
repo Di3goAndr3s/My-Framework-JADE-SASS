@@ -1,0 +1,72 @@
+@font-face
+    font-family brandon_grotesquemedium
+    font-style normal
+    src: url(fonts/brandon_med-webfont.ttf)
+
+
+@font-face
+    font-family brandon_grotesque_regularRg
+    font-style normal
+    src: url(fonts/brandon_reg-webfont.ttf)
+
+body
+  background white
+
+header div:nth-of-type(1)
+  size: 16.5rem
+  absolute()
+  top 0rem
+  left 50%
+  margin 0 0 0 -8.75rem
+  z(9)
+  bg white
+  br(100%)
+  a
+   background url(../img/logo.png)
+   block()
+   relative()
+   centered(1.5rem,0)
+   size: 13.5rem, 13.5rem
+
+
+header .wrapper
+  > ul
+    w100()
+    z(99)
+    {tcenter}
+    > li
+      inlineBlock()
+      > a
+         block()
+         color $grey
+         fs(1.3rem, 12rem, normal)
+         height 12rem
+         padding: 0 1.5rem;
+		 {fontMedium}
+         upper()
+         border-top .4rem solid white
+         &:hover
+          color $blue
+          {nounder}
+          border-top .4rem solid $blue
+      &:nth-of-type(5)
+          margin: 0 0 0 21rem
+
+figure.banner
+  size: 100%, 52.5rem
+  relative()
+  > img
+   filter blur(.4rem)
+  > div.overBanner
+   size: 100%, 52.5rem
+   absolute: top 0 left 0
+			b1()
+   background url(../img/overBanner.png)
+		> div.textBanner
+		 absolute: top 0 left 0
+		 b2()
+
+
+
+
+

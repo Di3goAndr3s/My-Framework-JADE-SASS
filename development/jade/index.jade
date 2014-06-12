@@ -1,0 +1,61 @@
+!!! 5
+html(ng-app='securityinafrica')
+ head
+  meta(charset='utf-8')
+  meta(http-equiv='X-UA-Compatible', content='IE=edge')
+  title securityinafrica
+  meta(name='description', content='')
+  meta(name='viewport', content='width=device-width')
+  link(rel='stylesheet', href='assets/css/lib.min.css')
+  link(rel='stylesheet', href='assets/css/style.min.css')
+  script(src='assets/js/lib.js')
+  script(src='assets/js/app.js')
+  script(src='assets/js/main.js')
+  script(src='assets/js/jquery.gmap3.js')
+  script(src='assets/js/jquery.scrollTo.min.js')
+  script(src='assets/jquery.easing/js/jquery.easing.min.js')
+  script(src='datepicker/js/bootstrap-datepicker.js')
+  link(rel='stylesheet', href='datepicker/css/datepicker.css')
+  script(src='//cdnjs.cloudflare.com/ajax/libs/fullcalendar/1.6.4/fullcalendar.min.js')
+  link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/fullcalendar/1.6.4/fullcalendar.css')
+  link(rel='stylesheet', href='//cdn.jsdelivr.net/bxslider/4.1.1/jquery.bxslider.css')
+  script(src='//cdn.jsdelivr.net/bxslider/4.1.1/jquery.bxslider.js')
+  link(rel='stylesheet', href='http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css')
+  script(src='http://code.jquery.com/ui/1.10.3/jquery-ui.js')
+
+
+
+
+ body
+  header
+   div
+    a(href='#')
+   div.wrapper
+    ul.menu
+     li
+      a(href='#aboutus') About us
+     li
+      a(href='#ourservices') Our Services
+     li
+      a(href='#register') Register
+     li
+      a(href='#vacancylist') Vacancy listing
+     li
+      a(href='#blog') Blog
+     li
+      a(href='#calendar') Calendar
+     li
+      a(href='#directories') directories
+     li
+      a(href='#about') Contact us
+  main(ng-controller='LoremController', ng-view='')
+  footer
+   div.wrapper
+    div
+     a(href='', target='_blank') <i class='fa fa-twitter fa-2x'></i>
+     a(href='', target='_blank') <i class='fa fa-facebook fa-2x'></i>
+     a(href='', target='_blank') <i class='fa fa-google-plus fa-2x'></i>
+    div © 2014 <span> security in africa </span> All rights reserved
+
+
+

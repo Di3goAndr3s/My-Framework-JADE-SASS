@@ -1,0 +1,25 @@
+{
+  "name": "securityinafrica",
+  "version": "0.0.1",
+  "dependencies": {
+    "angular": "~1.2.14",
+    "jquery": "1.11.0",
+    "angular-route": "~1.2.0",
+    "es5-shim": "*",
+    "modernizr": "*",
+    "normalize.css": "*",
+    "font-awesome": "*",
+    "selectivizr": "*",
+    "prefix-free": "gh-pages",
+    "bxSlider": "*",
+    "jquery.scrollTo": "*",
+    "jquery.easing": "*",
+    "bootstrap": "3.1.1",
+    "jscrollpane": "*",
+    "angular-placeholders": "*",
+    "angular-bootstrap": "0.10.0",
+    "angular-re-captcha": "~0.0.1",
+    "angular-xeditable": "*",
+    "bootstrap-datepicker": "*"
+  }
+}
